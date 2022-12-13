@@ -32,8 +32,8 @@ export default function Container({ children }) {
 				<Link
 					as={NextLink}
 					href="/"
-					_focus={{ 'text-decoration': 'none' }}
-					_hover={{ 'text-decoration': 'none' }}
+					_focus={{ textDecoration: 'none' }}
+					_hover={{ textDecoration: 'none' }}
 				>
 					<Flex alignItems="center">
 						<Image src="/logo.png" boxSize={'2rem'} mr={1} />
@@ -50,19 +50,47 @@ export default function Container({ children }) {
 								as={IconButton}
 								icon={
 									isOpen ? (
-										<CloseIcon boxSize={4} color="black" />
+										<CloseIcon boxSize={4} color="#4D81F7" />
 									) : (
-										<HamburgerIcon boxSize={6} color="black" />
+										<HamburgerIcon boxSize={6} color="#4D81F7" />
 									)
 								}
 								pt={1}
 								colorScheme="white"
 							/>
 							<MenuList>
-								<MenuItem justifyContent="end">Artículos</MenuItem>
-								<MenuItem justifyContent="end">Comunidad</MenuItem>
-								<MenuItem justifyContent="end">Conocimiento</MenuItem>
-								<MenuItem justifyContent="end">Desarrolladores</MenuItem>
+								<MenuItem
+									_focus={{
+										bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+									}}
+									justifyContent="end"
+								>
+									Artículos
+								</MenuItem>
+								<MenuItem
+									_focus={{
+										bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+									}}
+									justifyContent="end"
+								>
+									Comunidad
+								</MenuItem>
+								<MenuItem
+									_focus={{
+										bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+									}}
+									justifyContent="end"
+								>
+									Conocimiento
+								</MenuItem>
+								<MenuItem
+									_focus={{
+										bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+									}}
+									justifyContent="end"
+								>
+									Desarrolladores
+								</MenuItem>
 							</MenuList>
 						</>
 					)}

@@ -28,8 +28,8 @@ export default function Home() {
 						color="white"
 						mx={10}
 					>
-						Demasiados inconvenientes para ser considerado seriamente como un
-						medio de comunicación
+						"Demasiados inconvenientes para ser considerado seriamente como un
+						medio de comunicación"
 					</Text>
 					<Flex flexDirection="column" alignItems="center">
 						<Image
@@ -58,13 +58,10 @@ export default function Home() {
 				>
 					<Image src="/eth-rainbow.png" fit="contain" maxW="8rem" />
 					<Flex flexDirection="column">
-						<Box mb={5}>
+						<Box mb={7}>
 							<Text mb={5} textAlign="justify">
-								Hace unas décadas nadie podría haber predicho lo importante que
-								sería el teléfono para nuestra sociedad. A pesar de que su
-								impacto tiene aspectos positivos y negativos, sí podemos estar
-								todos de acuerdo de que el internet móvil ha cambiado nuestras
-								vidas.
+								Hace unas décadas nadie podría haber predicho el impacto que
+								tendría el teléfono en nuestra sociedad.
 							</Text>
 							<Text mb={5} textAlign="justify">
 								Hoy, gracias a la tecnología blockchain, cada uno de nosotros

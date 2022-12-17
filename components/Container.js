@@ -65,6 +65,8 @@ export default function Container({ children }) {
 								/>
 								<MenuList>
 									<MenuItem
+										as={NextLink}
+										href="/wip"
 										_focus={{
 											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
 										}}
@@ -73,6 +75,8 @@ export default function Container({ children }) {
 										Artículos
 									</MenuItem>
 									<MenuItem
+										as={NextLink}
+										href="/wip"
 										_focus={{
 											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
 										}}
@@ -81,6 +85,8 @@ export default function Container({ children }) {
 										Comunidad
 									</MenuItem>
 									<MenuItem
+										as={NextLink}
+										href="/wip"
 										_focus={{
 											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
 										}}
@@ -89,6 +95,8 @@ export default function Container({ children }) {
 										Conocimiento
 									</MenuItem>
 									<MenuItem
+										as={NextLink}
+										href="/wip"
 										_focus={{
 											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
 										}}
@@ -105,7 +113,7 @@ export default function Container({ children }) {
 					<HStack>
 						<Button
 							as={NextLink}
-							href="/test"
+							href="/wip"
 							borderWidth="1px"
 							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
 							borderColor="#5A9DED"
@@ -120,6 +128,8 @@ export default function Container({ children }) {
 							Artículos
 						</Button>
 						<Button
+							as={NextLink}
+							href="/wip"
 							borderWidth="1px"
 							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
 							borderColor="#5A9DED"
@@ -134,6 +144,8 @@ export default function Container({ children }) {
 							Comunidad
 						</Button>
 						<Button
+							as={NextLink}
+							href="/wip"
 							borderWidth="1px"
 							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
 							borderColor="#5A9DED"
@@ -148,6 +160,8 @@ export default function Container({ children }) {
 							Conocimiento
 						</Button>
 						<Button
+							as={NextLink}
+							href="/wip"
 							borderWidth="1px"
 							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
 							borderColor="#5A9DED"

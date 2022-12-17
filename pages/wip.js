@@ -15,7 +15,27 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Container>
-				<Flex h={'62vh'}></Flex>
+				<Flex
+					h={'62vh'}
+					flexDirection={{ base: 'column', md: 'row' }}
+					justifyContent="space-evenly"
+					mx={{ base: 10, md: 20 }}
+				>
+					<Text
+						fontSize="3xl"
+						alignSelf={{ md: 'center' }}
+						pr={{ md: 10 }}
+						color="gray.700"
+					>
+						Estamos trabajando para entregarte más contenido de calidad
+					</Text>
+					<Image
+						src="/eth.png"
+						fit="contain"
+						maxW={{ base: '18rem', md: '35rem' }}
+						alignSelf={{ base: 'center', md: 'flex-end' }}
+					></Image>
+				</Flex>
 				<Footer />
 			</Container>
 		</>

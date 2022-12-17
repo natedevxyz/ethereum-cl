@@ -10,6 +10,10 @@ import {
 	IconButton,
 	Text,
 	Link,
+	Hide,
+	Show,
+	Button,
+	HStack,
 } from '@chakra-ui/react';
 import '@fontsource/roboto/100.css';
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
@@ -19,7 +23,7 @@ export default function Container({ children }) {
 		<Flex minH={'100vh'} flexDirection="column">
 			<Flex
 				py={2}
-				px={5}
+				px={{ base: 5, md: 12 }}
 				justifyContent="space-between"
 				alignItems="center"
 				h={'8vh'}
@@ -42,59 +46,123 @@ export default function Container({ children }) {
 						</Text>
 					</Flex>
 				</Link>
-				<Menu>
-					{({ isOpen }) => (
-						<>
-							<MenuButton
-								isActive={isOpen}
-								as={IconButton}
-								icon={
-									isOpen ? (
-										<CloseIcon boxSize={4} color="#4D81F7" />
-									) : (
-										<HamburgerIcon boxSize={6} color="#4D81F7" />
-									)
-								}
-								pt={1}
-								colorScheme="white"
-							/>
-							<MenuList>
-								<MenuItem
-									_focus={{
-										bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
-									}}
-									justifyContent="end"
-								>
-									Artículos
-								</MenuItem>
-								<MenuItem
-									_focus={{
-										bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
-									}}
-									justifyContent="end"
-								>
-									Comunidad
-								</MenuItem>
-								<MenuItem
-									_focus={{
-										bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
-									}}
-									justifyContent="end"
-								>
-									Conocimiento
-								</MenuItem>
-								<MenuItem
-									_focus={{
-										bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
-									}}
-									justifyContent="end"
-								>
-									Desarrolladores
-								</MenuItem>
-							</MenuList>
-						</>
-					)}
-				</Menu>
+				<Hide above="lg">
+					<Menu>
+						{({ isOpen }) => (
+							<>
+								<MenuButton
+									isActive={isOpen}
+									as={IconButton}
+									icon={
+										isOpen ? (
+											<CloseIcon boxSize={4} color="#4D81F7" />
+										) : (
+											<HamburgerIcon boxSize={6} color="#4D81F7" />
+										)
+									}
+									pt={1}
+									colorScheme="white"
+								/>
+								<MenuList>
+									<MenuItem
+										_focus={{
+											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+										}}
+										justifyContent="end"
+									>
+										Artículos
+									</MenuItem>
+									<MenuItem
+										_focus={{
+											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+										}}
+										justifyContent="end"
+									>
+										Comunidad
+									</MenuItem>
+									<MenuItem
+										_focus={{
+											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+										}}
+										justifyContent="end"
+									>
+										Conocimiento
+									</MenuItem>
+									<MenuItem
+										_focus={{
+											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+										}}
+										justifyContent="end"
+									>
+										Desarrolladores
+									</MenuItem>
+								</MenuList>
+							</>
+						)}
+					</Menu>
+				</Hide>
+				<Show above="lg">
+					<HStack>
+						<Button
+							as={NextLink}
+							href="/test"
+							borderWidth="1px"
+							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
+							borderColor="#5A9DED"
+							fontWeight="normal"
+							borderRadius="full"
+							_hover={{
+								bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+								color: 'black',
+								borderColor: '#FB9080',
+							}}
+						>
+							Artículos
+						</Button>
+						<Button
+							borderWidth="1px"
+							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
+							borderColor="#5A9DED"
+							fontWeight="normal"
+							borderRadius="full"
+							_hover={{
+								bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+								color: 'black',
+								borderColor: '#FB9080',
+							}}
+						>
+							Comunidad
+						</Button>
+						<Button
+							borderWidth="1px"
+							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
+							borderColor="#5A9DED"
+							fontWeight="normal"
+							borderRadius="full"
+							_hover={{
+								bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+								color: 'black',
+								borderColor: '#FB9080',
+							}}
+						>
+							Conocimiento
+						</Button>
+						<Button
+							borderWidth="1px"
+							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
+							borderColor="#5A9DED"
+							fontWeight="normal"
+							borderRadius="full"
+							_hover={{
+								bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+								color: 'black',
+								borderColor: '#FB9080',
+							}}
+						>
+							Desarrolladores
+						</Button>
+					</HStack>
+				</Show>
 			</Flex>
 			{children}
 		</Flex>

@@ -9,10 +9,10 @@ const fonts = {
 };
 
 const breakpoints = {
-	sm: '40em',
-	md: '48em',
-	lg: '64em',
-	xl: '80em',
+	sm: '320px',
+	md: '768px',
+	lg: '960px',
+	xl: '1200px',
 };
 
 const overrides = {

@@ -936,10 +936,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.3.0.tgz#ea89004119dc42db2e1dba0f97d553f7372f6fcb"
   integrity sha512-AHPmaAx+RYfZz0eYu6Gviiagpmiyw98ySSlQvCUhVGDRtDFe4DBS0x1bSjdF3gqUDYOczB+yYvBTtEylYSdRhg==
 
-"@fontsource/dm-serif-display@^4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@fontsource/dm-serif-display/-/dm-serif-display-4.5.9.tgz#2be835a895471385c6ed5e8639e7c389ca07490e"
-  integrity sha512-SiuNT7PIHE0nHZqvdQ09NhpFygMzZPupOr7juWJlurad4jyelr1cFm7vW5JGaWhH2ZaaG7QAwpGyhKss5ii0+g==
+"@fontsource/lora@^4.5.13":
+  version "4.5.13"
+  resolved "https://registry.yarnpkg.com/@fontsource/lora/-/lora-4.5.13.tgz#f68fe5a43699f3ac2921c894ec190de9a6decb45"
+  integrity sha512-SV8z2btHCVpjfyLpuqHNyKH56YuzJdv0tjqbi/Mb7hkXGWgz44RuGYSNAoYCes9y2fzJ2zpYUwfCrvcAEjDqMQ==
 
 "@fontsource/poppins@^4.5.10":
   version "4.5.10"

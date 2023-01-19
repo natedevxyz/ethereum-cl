@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import Container from '../components/Container';
 import Footer from '../components/Footer';
-import '@fontsource/poppins';
-import '@fontsource/dm-serif-display';
 import { Flex, Image, Text } from '@chakra-ui/react';
 
 export default function Home() {

@@ -1,8 +1,7 @@
 import Head from 'next/head';
 import Container from '../components/Container';
 import Footer from '../components/Footer';
-import '@fontsource/poppins';
-import '@fontsource/dm-serif-display';
+import '@fontsource/lora/500.css';
 import { Flex, Image, Text, Box } from '@chakra-ui/react';
 
 export default function Home() {
@@ -17,55 +16,62 @@ export default function Home() {
 			<Container>
 				<Flex
 					h={'92vh'}
-					bgGradient="linear(to-br, #29323c 0%, #485563 100%)"
+					bgGradient="linear(to-b, #1E1E1E 0%, #222A3E 100%)"
 					flexDirection={{ base: 'column', md: 'row' }}
 					alignItems="center"
 					justifyContent="space-evenly"
 				>
-					<Text
-						fontFamily="DM Serif Display"
-						fontSize={{ base: '3xl', md: '5xl' }}
-						color="white"
+					<Flex
+						flexDirection="column"
 						mr={{ base: 10, md: 0 }}
 						ml={{ base: 10, md: 20 }}
-						pb={{ base: 0, md: 32 }}
+						pb={{ base: 0, md: 20 }}
 					>
-						"Demasiados inconvenientes para ser considerado seriamente como un
-						medio de comunicación"
-					</Text>
+						<Text
+							fontFamily="Lora"
+							fontSize={{ base: '3xl', md: '5xl' }}
+							fontWeight={500}
+							color="white"
+							mb={{ base: 4, md: 8 }}
+						>
+							"Demasiados inconvenientes para ser considerado seriamente como un
+							medio de comunicación"
+						</Text>
+						<Text fontSize={{ base: 'md', md: 'xl' }} color="white">
+							Presidente de Western Union refiriéndose al teléfono, 1876
+						</Text>
+					</Flex>
 					<Flex
 						flexDirection="column"
 						alignItems="center"
 						minWidth={{ md: '40%' }}
+						pb={{ md: 8 }}
 					>
 						<Image
 							src="/william-orton.jpg"
 							fit="contain"
 							maxW={{ base: '10rem', md: '15rem' }}
-							borderRadius="xl"
-							mb={8}
+							borderRadius="md"
+							mb={4}
 						/>
-						<Flex
-							flexDirection="column"
+						<Text
+							fontWeight={500}
+							fontSize={{ base: 'md', md: 'xl' }}
 							bg="white"
-							mx={14}
-							p={5}
-							maxWidth={{ md: '50%' }}
+							borderRadius="md"
+							py={1}
+							px={3}
+							fontFamily="Lora"
 						>
-							<Text fontWeight="bold" fontSize="lg" mb={2}>
-								William Orton
-							</Text>
-							<Text fontSize="md">
-								Presidente de Western Union refiriéndose al teléfono, 1876
-							</Text>
-						</Flex>
+							William Orton
+						</Text>
 					</Flex>
 				</Flex>
 				<Flex
 					h={'92vh'}
 					flexDirection={{ base: 'column', md: 'row' }}
 					alignItems="center"
-					justifyContent={{ base: 'space-around', md: 'space-evenly' }}
+					justifyContent="space-evenly"
 					mx={7}
 				>
 					<Image

@@ -114,15 +114,12 @@ export default function Container({ children }) {
 						<Button
 							as={NextLink}
 							href="/wip"
-							borderWidth="1px"
 							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
-							borderColor="#5A9DED"
 							fontWeight="normal"
 							borderRadius="full"
 							_hover={{
 								bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
 								color: 'black',
-								borderColor: '#FB9080',
 							}}
 						>
 							Artículos
@@ -130,15 +127,12 @@ export default function Container({ children }) {
 						<Button
 							as={NextLink}
 							href="/wip"
-							borderWidth="1px"
 							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
-							borderColor="#5A9DED"
 							fontWeight="normal"
 							borderRadius="full"
 							_hover={{
 								bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
 								color: 'black',
-								borderColor: '#FB9080',
 							}}
 						>
 							Comunidad
@@ -146,15 +140,12 @@ export default function Container({ children }) {
 						<Button
 							as={NextLink}
 							href="/wip"
-							borderWidth="1px"
 							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
-							borderColor="#5A9DED"
 							fontWeight="normal"
 							borderRadius="full"
 							_hover={{
 								bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
 								color: 'black',
-								borderColor: '#FB9080',
 							}}
 						>
 							Conocimiento
@@ -162,15 +153,12 @@ export default function Container({ children }) {
 						<Button
 							as={NextLink}
 							href="/wip"
-							borderWidth="1px"
 							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
-							borderColor="#5A9DED"
 							fontWeight="normal"
 							borderRadius="full"
 							_hover={{
 								bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
 								color: 'black',
-								borderColor: '#FB9080',
 							}}
 						>
 							Desarrolladores

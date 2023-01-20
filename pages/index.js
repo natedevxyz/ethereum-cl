@@ -1,10 +1,15 @@
+import { useRef } from 'react';
 import Head from 'next/head';
 import Container from '../components/Container';
 import Footer from '../components/Footer';
 import '@fontsource/lora/500.css';
 import { Flex, Image, Text, Box } from '@chakra-ui/react';
+import { motion, useInView } from 'framer-motion';
 
 export default function Home() {
+	/* const ref = useRef(null);
+	const isInView = useInView(ref, { once: true });
+ */
 	return (
 		<>
 			<Head>
@@ -27,19 +32,37 @@ export default function Home() {
 						ml={{ base: 10, md: 20 }}
 						pb={{ base: 0, md: 20 }}
 					>
-						<Text
-							fontFamily="Lora"
-							fontSize={{ base: '3xl', md: '5xl' }}
-							fontWeight={500}
-							color="white"
-							mb={{ base: 4, md: 8 }}
+						<motion.div
+							initial="initialState"
+							animate="animateState"
+							transition={{
+								duration: 1.5,
+							}}
+							variants={{
+								initialState: {
+									opacity: 0,
+									x: '-100vw',
+								},
+								animateState: {
+									opacity: 1,
+									x: 0,
+								},
+							}}
 						>
-							"Demasiados inconvenientes para ser considerado seriamente como un
-							medio de comunicación"
-						</Text>
-						<Text fontSize={{ base: 'md', md: 'xl' }} color="white">
-							Presidente de Western Union refiriéndose al teléfono, 1876
-						</Text>
+							<Text
+								fontFamily="Lora"
+								fontSize={{ base: '3xl', md: '5xl' }}
+								fontWeight={500}
+								color="white"
+								mb={{ base: 4, md: 8 }}
+							>
+								"Demasiados inconvenientes para ser considerado seriamente como
+								un medio de comunicación"
+							</Text>
+							<Text fontSize={{ base: 'md', md: 'xl' }} color="white">
+								Presidente de Western Union refiriéndose al teléfono, 1876
+							</Text>
+						</motion.div>
 					</Flex>
 					<Flex
 						flexDirection="column"

@@ -7,9 +7,9 @@ import { Flex, Image, Text, Box } from '@chakra-ui/react';
 import { motion, useInView } from 'framer-motion';
 
 export default function Home() {
-	/* const ref = useRef(null);
+	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
- */
+
 	return (
 		<>
 			<Head>
@@ -97,12 +97,23 @@ export default function Home() {
 					justifyContent="space-evenly"
 					mx={7}
 				>
-					<Image
-						src="/eth-rainbow.png"
-						fit="contain"
-						maxW={{ base: '8rem', md: '16rem' }}
-						pb={{ base: 0, md: 10 }}
-					/>
+					<motion.div
+						ref={ref}
+						animate={{
+							opacity: isInView ? 1 : 0,
+							scale: isInView ? 1 : 0,
+						}}
+						transition={{
+							duration: 1,
+						}}
+					>
+						<Image
+							src="/eth-rainbow.png"
+							fit="contain"
+							maxW={{ base: '8rem', md: '16rem' }}
+							pb={{ base: 0, md: 10 }}
+						/>
+					</motion.div>
 					<Flex flexDirection="column" maxWidth={{ md: '40%' }}>
 						<Box mb={{ base: 7, md: 14 }}>
 							<Text mb={5} textAlign="justify" fontSize={{ md: 'xl' }}>

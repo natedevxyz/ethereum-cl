@@ -25,7 +25,11 @@ export default function Footer() {
 				<FaHeart color="#EC3238" />
 				<Text mx={1}>por</Text>
 				<Link href="https://twitter.com/Nate_d3v" isExternal>
-					<Image src="/nate-d3v.jpg" borderRadius="full" boxSize={10} />
+					<Image
+						src="https://github.com/nate-d3v.png"
+						borderRadius="full"
+						boxSize={10}
+					/>
 				</Link>
 			</Flex>
 			<Text mb={{ base: 0, md: 2 }}>ethereum.cl &copy; 2022</Text>

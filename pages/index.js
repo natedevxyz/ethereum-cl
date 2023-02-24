@@ -76,18 +76,24 @@ export default function Home() {
 							maxW={{ base: '10rem', md: '15rem' }}
 							borderRadius="md"
 							mb={4}
+							boxShadow="lg"
 						/>
-						<Text
-							fontWeight={500}
-							fontSize={{ base: 'md', md: 'xl' }}
-							bg="white"
+						<Box
+							bg="rgba(255, 255, 255, 0.05)"
 							borderRadius="md"
 							py={1}
 							px={3}
-							fontFamily="Lora"
+							boxShadow="lg"
 						>
-							William Orton
-						</Text>
+							<Text
+								fontWeight={500}
+								fontSize={{ base: 'md', md: 'xl' }}
+								fontFamily="Lora"
+								color="white"
+							>
+								William Orton
+							</Text>
+						</Box>
 					</Flex>
 				</Flex>
 				<Flex

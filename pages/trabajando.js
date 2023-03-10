@@ -1,9 +1,8 @@
 import Head from 'next/head';
 import Container from '../components/Container';
-import Footer from '../components/Footer';
 import { Flex, Image, Text } from '@chakra-ui/react';
 
-export default function Home() {
+export default function Trabajando() {
 	return (
 		<>
 			<Head>
@@ -34,7 +33,6 @@ export default function Home() {
 						alignSelf={{ base: 'center', md: 'flex-end' }}
 					></Image>
 				</Flex>
-				<Footer />
 			</Container>
 		</>
 	);

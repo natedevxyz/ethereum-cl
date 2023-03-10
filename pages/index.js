@@ -1,12 +1,11 @@
 import { useRef } from 'react';
 import Head from 'next/head';
 import Container from '../components/Container';
-import Footer from '../components/Footer';
 import '@fontsource/lora/500.css';
 import { Flex, Image, Text, Box } from '@chakra-ui/react';
 import { motion, useInView } from 'framer-motion';
 
-export default function Home() {
+export default function Inicio() {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
 
@@ -144,7 +143,6 @@ export default function Home() {
 						</Text>
 					</Flex>
 				</Flex>
-				<Footer />
 			</Container>
 		</>
 	);

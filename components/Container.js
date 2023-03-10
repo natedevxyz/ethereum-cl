@@ -17,6 +17,7 @@ import {
 } from '@chakra-ui/react';
 import '@fontsource/roboto/100.css';
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
+import Footer from './Footer';
 
 export default function Container({ children }) {
 	return (
@@ -66,7 +67,7 @@ export default function Container({ children }) {
 								<MenuList>
 									<MenuItem
 										as={NextLink}
-										href="/wip"
+										href="/trabajando"
 										_focus={{
 											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
 										}}
@@ -76,7 +77,7 @@ export default function Container({ children }) {
 									</MenuItem>
 									<MenuItem
 										as={NextLink}
-										href="/wip"
+										href="/trabajando"
 										_focus={{
 											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
 										}}
@@ -86,7 +87,7 @@ export default function Container({ children }) {
 									</MenuItem>
 									<MenuItem
 										as={NextLink}
-										href="/wip"
+										href="/conocimiento"
 										_focus={{
 											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
 										}}
@@ -96,7 +97,7 @@ export default function Container({ children }) {
 									</MenuItem>
 									<MenuItem
 										as={NextLink}
-										href="/wip"
+										href="/trabajando"
 										_focus={{
 											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
 										}}
@@ -113,7 +114,7 @@ export default function Container({ children }) {
 					<HStack>
 						<Button
 							as={NextLink}
-							href="/wip"
+							href="/trabajando"
 							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
 							fontWeight="normal"
 							borderRadius="full"
@@ -126,7 +127,7 @@ export default function Container({ children }) {
 						</Button>
 						<Button
 							as={NextLink}
-							href="/wip"
+							href="/trabajando"
 							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
 							fontWeight="normal"
 							borderRadius="full"
@@ -139,7 +140,7 @@ export default function Container({ children }) {
 						</Button>
 						<Button
 							as={NextLink}
-							href="/wip"
+							href="/conocimiento"
 							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
 							fontWeight="normal"
 							borderRadius="full"
@@ -152,7 +153,7 @@ export default function Container({ children }) {
 						</Button>
 						<Button
 							as={NextLink}
-							href="/wip"
+							href="/trabajando"
 							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
 							fontWeight="normal"
 							borderRadius="full"
@@ -167,6 +168,7 @@ export default function Container({ children }) {
 				</Show>
 			</Flex>
 			{children}
+			<Footer />
 		</Flex>
 	);
 }

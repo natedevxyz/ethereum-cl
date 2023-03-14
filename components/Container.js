@@ -69,9 +69,11 @@ export default function Container({ children }) {
 										as={NextLink}
 										href="/trabajando"
 										_focus={{
-											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+											bgGradient: 'linear(to-l, #FCA074 0%, #FB838B 100%)',
 										}}
 										justifyContent="end"
+										letterSpacing="1px"
+										color="black"
 									>
 										Artículos
 									</MenuItem>
@@ -79,9 +81,11 @@ export default function Container({ children }) {
 										as={NextLink}
 										href="/trabajando"
 										_focus={{
-											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+											bgGradient: 'linear(to-l, #FCA074 0%, #FB838B 100%)',
 										}}
 										justifyContent="end"
+										letterSpacing="1px"
+										color="black"
 									>
 										Comunidad
 									</MenuItem>
@@ -89,9 +93,11 @@ export default function Container({ children }) {
 										as={NextLink}
 										href="/conocimiento"
 										_focus={{
-											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+											bgGradient: 'linear(to-l, #FCA074 0%, #FB838B 100%)',
 										}}
 										justifyContent="end"
+										letterSpacing="1px"
+										color="black"
 									>
 										Conocimiento
 									</MenuItem>
@@ -99,9 +105,11 @@ export default function Container({ children }) {
 										as={NextLink}
 										href="/trabajando"
 										_focus={{
-											bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+											bgGradient: 'linear(to-l, #FCA074 0%, #FB838B 100%)',
 										}}
 										justifyContent="end"
+										letterSpacing="1px"
+										color="black"
 									>
 										Desarrolladores
 									</MenuItem>
@@ -115,11 +123,13 @@ export default function Container({ children }) {
 						<Button
 							as={NextLink}
 							href="/trabajando"
-							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
+							bgGradient="linear(to-r, #64E1DE 0%, #53D3E0 100%)"
 							fontWeight="normal"
+							letterSpacing="1px"
 							borderRadius="full"
+							color="black"
 							_hover={{
-								bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+								bgGradient: 'linear(to-l, #FCA074 0%, #FB838B 100%)',
 								color: 'black',
 							}}
 						>
@@ -128,11 +138,13 @@ export default function Container({ children }) {
 						<Button
 							as={NextLink}
 							href="/trabajando"
-							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
+							bgGradient="linear(to-r, #64E1DE 0%, #53D3E0 100%)"
 							fontWeight="normal"
+							letterSpacing="1px"
 							borderRadius="full"
+							color="black"
 							_hover={{
-								bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+								bgGradient: 'linear(to-l, #FCA074 0%, #FB838B 100%)',
 								color: 'black',
 							}}
 						>
@@ -141,11 +153,13 @@ export default function Container({ children }) {
 						<Button
 							as={NextLink}
 							href="/conocimiento"
-							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
+							bgGradient="linear(to-r, #64E1DE 0%, #53D3E0 100%)"
 							fontWeight="normal"
+							letterSpacing="1px"
 							borderRadius="full"
+							color="black"
 							_hover={{
-								bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+								bgGradient: 'linear(to-l, #FCA074 0%, #FB838B 100%)',
 								color: 'black',
 							}}
 						>
@@ -154,11 +168,13 @@ export default function Container({ children }) {
 						<Button
 							as={NextLink}
 							href="/trabajando"
-							bgGradient="linear(to-r, #c2e9fb 0%, #a1c4fd 100%)"
+							bgGradient="linear(to-r, #64E1DE 0%, #53D3E0 100%)"
 							fontWeight="normal"
+							letterSpacing="1px"
 							borderRadius="full"
+							color="black"
 							_hover={{
-								bgGradient: 'linear(to-r, #ffecd2 0%, #fcb69f 100%)',
+								bgGradient: 'linear(to-l, #FCA074 0%, #FB838B 100%)',
 								color: 'black',
 							}}
 						>

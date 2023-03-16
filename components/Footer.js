@@ -18,7 +18,7 @@ export default function Footer() {
 				mb={{ base: 6, md: 0 }}
 				px={{ base: 0, md: 12 }}
 			>
-				<FaTwitter fontSize={50} color="#FB838B" />
+				<FaTwitter fontSize={48} color="#FB838B" />
 			</Link>
 			<Flex alignItems="center" mb={{ base: 2, md: 0 }}>
 				<Text mr={1}>Hecho con</Text>

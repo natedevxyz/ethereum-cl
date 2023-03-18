@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Container from '../../components/Container';
 import { Flex, Text, Box } from '@chakra-ui/react';
 import { FaStar } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 export default function Conocimiento() {
 	return (
@@ -54,26 +55,58 @@ export default function Conocimiento() {
 							flexDirection="column"
 							align="center"
 							borderRadius="2xl"
-							border="2px"
-							borderColor="#CFF3F7"
+							border="1px"
+							borderColor="gray.200"
 							p={8}
-							w={{ base: '85%', md: '30%' }}
-							boxShadow="sm"
+							minH="20rem"
+							w={{ base: '85%', md: '25%' }}
+							boxShadow="xs"
+							position="relative"
+							zIndex={0}
 						>
-							<FaStar fontSize={44} color="#F97C56" />
-							<Text
-								fontSize={{ base: '2xl', md: '3xl' }}
-								fontWeight="bold"
-								color="#4D81F7"
-								mt={2}
-								mb={5}
-							>
-								Conceptos básicos
-							</Text>
-							<Text textAlign="justify" fontSize={{ md: 'md' }}>
-								Si todo esto te parece muy complicado este es el lugar perfecto
-								para empezar.
-							</Text>
+							<Box
+								h="10rem"
+								w="10rem"
+								bgGradient="radial(#53D3E0 0%, #FFF 100%)"
+								position="absolute"
+								top="4.5rem"
+								zIndex={-1}
+								rounded="full"
+								opacity={0.7}
+								filter="blur(50px)"
+							/>
+							<Flex flexDirection="column" align="center">
+								<Text
+									fontSize={{ base: 'xl', md: '2xl' }}
+									color="#4D81F7"
+									mb={16}
+								>
+									Conceptos básicos
+								</Text>
+								<motion.div
+									whileHover={{
+										scale: 1.5,
+										transition: { duration: 0.1 },
+									}}
+									whileTap={{
+										scale: 1.5,
+										transition: { duration: 0.1 },
+									}}
+								>
+									<Flex>
+										<FaStar fontSize={44} color="#FD8A5E" />
+									</Flex>
+								</motion.div>
+								<Text
+									mt={20}
+									textAlign="justify"
+									fontSize={{ base: 'sm', md: 'md' }}
+									color="gray.600"
+								>
+									Si todo esto te parece muy complicado este es el lugar
+									perfecto para empezar.
+								</Text>
+							</Flex>
 						</Flex>
 					</Flex>
 				</Flex>

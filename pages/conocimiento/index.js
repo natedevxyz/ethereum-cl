@@ -1,10 +1,15 @@
 import Head from 'next/head';
+import NextLink from 'next/link';
 import Container from '../../components/Container';
 import { Flex, Text, Box } from '@chakra-ui/react';
 import { FaStar } from 'react-icons/fa';
+import { RxCross1 } from 'react-icons/rx';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 export default function Conocimiento() {
+	const [cardActive, setCardActive] = useState(false);
+
 	return (
 		<>
 			<Head>
@@ -32,7 +37,7 @@ export default function Conocimiento() {
 						<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
 							¿Cómo funciona internet?, ¿cómo funciona el correo electrónico?,
 							¿y las redes sociales?. La verdad no es necesario entender cómo
-							funcionan estas tecnologías para recibir los beneficios de ser sus
+							funcionan estas tecnologías para recibir sus beneficios como
 							usuarios.
 						</Text>
 						<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
@@ -54,11 +59,11 @@ export default function Conocimiento() {
 						<Flex
 							flexDirection="column"
 							align="center"
-							borderRadius="2xl"
+							rounded="2xl"
 							border="1px"
 							borderColor="gray.200"
 							p={8}
-							minH="20rem"
+							minH="23rem"
 							w={{ base: '85%', md: '25%' }}
 							boxShadow="xs"
 							position="relative"
@@ -69,44 +74,99 @@ export default function Conocimiento() {
 								w="10rem"
 								bgGradient="radial(#53D3E0 0%, #FFF 100%)"
 								position="absolute"
-								top="4.5rem"
+								top="5rem"
 								zIndex={-1}
 								rounded="full"
 								opacity={0.7}
 								filter="blur(50px)"
 							/>
-							<Flex flexDirection="column" align="center">
-								<Text
-									fontSize={{ base: 'xl', md: '2xl' }}
-									color="#4D81F7"
-									mb={16}
-								>
-									Conceptos básicos
-								</Text>
-								<motion.div
-									whileHover={{
-										scale: 1.5,
-										transition: { duration: 0.1 },
-									}}
-									whileTap={{
-										scale: 1.5,
-										transition: { duration: 0.1 },
-									}}
-								>
-									<Flex>
-										<FaStar fontSize={44} color="#FD8A5E" />
+							{!cardActive && (
+								<>
+									<Flex flexDirection="column" align="center">
+										<Text
+											fontSize={{ base: 'xl', md: '2xl' }}
+											color="#2B6DF8"
+											mb={16}
+										>
+											Conceptos básicos
+										</Text>
+										<motion.div
+											whileHover={{
+												scale: 1.5,
+												transition: { duration: 0.1 },
+											}}
+											whileTap={{
+												scale: 1.5,
+												transition: { duration: 0.1 },
+											}}
+											onClick={() => setCardActive(true)}
+										>
+											<Flex>
+												<FaStar fontSize={44} color="#FD8A5E" />
+											</Flex>
+										</motion.div>
+										<Text
+											mt={{ base: 24, md: 20 }}
+											textAlign="justify"
+											fontSize={{ base: 'sm', md: 'md' }}
+											color="gray.700"
+										>
+											Si todo esto te parece muy complicado este es el lugar
+											perfecto para empezar.
+										</Text>
 									</Flex>
-								</motion.div>
-								<Text
-									mt={20}
-									textAlign="justify"
-									fontSize={{ base: 'sm', md: 'md' }}
-									color="gray.600"
-								>
-									Si todo esto te parece muy complicado este es el lugar
-									perfecto para empezar.
-								</Text>
-							</Flex>
+								</>
+							)}
+							{cardActive && (
+								<>
+									<Flex
+										flexDirection="column"
+										justify="space-between"
+										align="center"
+										w="100%"
+										h="100%"
+									>
+										<Box
+											as={NextLink}
+											href="/conocimiento/descentralizacion"
+											_hover={{
+												borderColor: '#F8650A',
+												bg: 'white',
+											}}
+											boxShadow="lg"
+											w="100%"
+											py="1rem"
+											rounded="full"
+											border="1px"
+											borderColor="gray.200"
+											bg="rgba(255, 255, 255, 0.3)"
+										>
+											<Text
+												fontWeight="normal"
+												letterSpacing="1px"
+												borderRadius="full"
+												color="gray.700"
+												align="center"
+											>
+												Descentralización
+											</Text>
+										</Box>
+										<motion.div
+											whileHover={{
+												scale: 1.5,
+												transition: { duration: 0.1 },
+											}}
+											whileTap={{
+												scale: 1.5,
+												transition: { duration: 0.1 },
+											}}
+											onClick={() => setCardActive(false)}
+										>
+											<RxCross1 fontSize={24} color="#2B6DF8" />
+										</motion.div>
+									</Flex>
+								</>
+							)}
 						</Flex>
 					</Flex>
 				</Flex>

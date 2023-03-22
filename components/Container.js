@@ -56,9 +56,9 @@ export default function Container({ children }) {
 									as={IconButton}
 									icon={
 										isOpen ? (
-											<CloseIcon boxSize={4} color="#4D81F7" />
+											<CloseIcon boxSize={4} color="#2B6DF8" />
 										) : (
-											<HamburgerIcon boxSize={6} color="#4D81F7" />
+											<HamburgerIcon boxSize={6} color="#2B6DF8" />
 										)
 									}
 									pt={1}

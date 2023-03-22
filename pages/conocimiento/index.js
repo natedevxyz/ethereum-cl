@@ -61,7 +61,7 @@ export default function Conocimiento() {
 							align="center"
 							rounded="2xl"
 							border="1px"
-							borderColor="gray.200"
+							borderColor={!cardActive ? 'gray.200' : '#AAEEEC'}
 							p={8}
 							minH="23rem"
 							w={{ base: '85%', md: '25%' }}
@@ -77,7 +77,7 @@ export default function Conocimiento() {
 								top="5rem"
 								zIndex={-1}
 								rounded="full"
-								opacity={0.7}
+								opacity={0.4}
 								filter="blur(50px)"
 							/>
 							{!cardActive && (
@@ -85,7 +85,7 @@ export default function Conocimiento() {
 									<Flex flexDirection="column" align="center">
 										<Text
 											fontSize={{ base: 'xl', md: '2xl' }}
-											color="#2B6DF8"
+											color="#3C77F8"
 											mb={16}
 										>
 											Conceptos básicos
@@ -139,7 +139,7 @@ export default function Conocimiento() {
 											rounded="full"
 											border="1px"
 											borderColor="gray.200"
-											bg="rgba(255, 255, 255, 0.3)"
+											bg="rgba(255, 255, 255, 0)"
 										>
 											<Text
 												fontWeight="normal"

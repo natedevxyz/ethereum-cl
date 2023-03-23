@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Container from '../components/Container';
+import Wrapper from '../components/Wrapper';
 import { Flex, Image, Text } from '@chakra-ui/react';
 
 export default function Trabajando() {
@@ -11,7 +11,7 @@ export default function Trabajando() {
 				<meta name="keywords" content="ethereum, crypto, blockchain, chile" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Container>
+			<Wrapper>
 				<Flex
 					h={'62vh'}
 					flexDirection={{ base: 'column', md: 'row' }}
@@ -33,7 +33,7 @@ export default function Trabajando() {
 						alignSelf={{ base: 'center', md: 'flex-end' }}
 					></Image>
 				</Flex>
-			</Container>
+			</Wrapper>
 		</>
 	);
 }

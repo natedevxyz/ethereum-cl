@@ -19,7 +19,7 @@ import '@fontsource/roboto/100.css';
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 import Footer from './Footer';
 
-export default function Container({ children }) {
+export default function Wrapper({ children }) {
 	return (
 		<Flex minH={'100vh'} flexDirection="column">
 			<Flex

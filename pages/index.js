@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import Head from 'next/head';
-import Container from '../components/Container';
+import Wrapper from '../components/Wrapper';
 import '@fontsource/lora/500.css';
 import { Flex, Image, Text, Box } from '@chakra-ui/react';
 import { motion, useInView } from 'framer-motion';
@@ -17,7 +17,7 @@ export default function Inicio() {
 				<meta name="keywords" content="ethereum, crypto, blockchain, chile" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Container>
+			<Wrapper>
 				<Flex
 					h={'92vh'}
 					bgGradient="linear(to-b, #1E1E1E 0%, #222A3E 100%)"
@@ -143,7 +143,7 @@ export default function Inicio() {
 						</Text>
 					</Flex>
 				</Flex>
-			</Container>
+			</Wrapper>
 		</>
 	);
 }

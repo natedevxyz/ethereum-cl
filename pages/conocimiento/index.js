@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import NextLink from 'next/link';
-import Container from '../../components/Container';
+import Wrapper from '../../components/Wrapper';
 import { Flex, Text, Box } from '@chakra-ui/react';
 import { FaStar } from 'react-icons/fa';
 import { RxCross1 } from 'react-icons/rx';
@@ -18,7 +18,7 @@ export default function Conocimiento() {
 				<meta name="keywords" content="ethereum, crypto, blockchain, chile" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Container>
+			<Wrapper>
 				<Flex
 					minH={'92vh'}
 					flexDirection="column"
@@ -170,7 +170,7 @@ export default function Conocimiento() {
 						</Flex>
 					</Flex>
 				</Flex>
-			</Container>
+			</Wrapper>
 		</>
 	);
 }

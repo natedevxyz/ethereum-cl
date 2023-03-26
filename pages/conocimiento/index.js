@@ -50,7 +50,7 @@ export default function Conocimiento() {
 						<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
 							Es muy probable, al igual que con otras tecnologías, que con el
 							tiempo cada vez sea más fácil interactuar con blockchain. Pero la
-							historia siempre recompensa a los que quieren aprender más y es
+							historia siempre recompensa a los que se atreven a innovar y es
 							por eso que hicimos una recopilación de los conceptos clave para
 							entender cómo funciona blockchain.
 						</Text>

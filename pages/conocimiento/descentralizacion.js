@@ -33,7 +33,10 @@ export default function Descentralizacion() {
 					<Text fontSize={{ base: '2xl', md: '4xl' }} color="#4D81F7" mb={5}>
 						¿Por qué es importante la descentralización?
 					</Text>
-					<Flex flexDirection={{ base: 'column-reverse', md: 'row' }}>
+					<Flex
+						flexDirection={{ base: 'column-reverse', md: 'row' }}
+						justify="center"
+					>
 						<Box w={{ base: '100%', md: '50%' }}>
 							<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
 								Intenta hacer memoria de los pasos que recién seguiste para
@@ -49,7 +52,7 @@ export default function Descentralizacion() {
 							</Text>
 							<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
 								Piensa ahora cuánta información personal mantienes
-								voluntariamente en estas plataformas. Correos, fotos,
+								voluntariamente en estas plataformas como correos, fotos,
 								conversaciones, etc. Es innegable que todo esto nos facilita la
 								vida y además a un precio imbatible: gratis. ¿Cómo algo así
 								puede ser una desventaja para los usuarios?
@@ -58,25 +61,28 @@ export default function Descentralizacion() {
 								Esto podría compararse a ser súbditos de un reino. Este reino
 								ofrece muchos beneficios sabiendo que mientras más súbditos
 								tenga, mejores serán sus perspectivas económicas. Pero la
-								historia ha demostrado que cuando una persona (como un rey)
-								tiene mucho poder, se genera un desequilibrio que no beneficia a
-								la mayoría (como los súbditos).
+								historia ha demostrado que cuando el poder de decisión se
+								concentra (como en un rey), se genera un desequilibrio que no
+								beneficia a la mayoría.
 							</Text>
 							<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
 								Esta comparación puede parecer una exageración, pero no lo es.
 								Las compañías tecnológicas como Google tienen como principal
-								prioridad la rentabilidad, y aunque eso no es algo malo, sí hay
-								un conflicto de intereses cuando un grupo pequeño tiene que
-								decidir entre los resultados económicos y el bien de los
+								prioridad la rentabilidad, y aunque eso no es algo malo, sí
+								habrá un conflicto de intereses cuando un grupo pequeño tenga
+								que decidir entre los resultados económicos y el bien de los
 								usuarios.
 							</Text>
 							<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
 								Hasta el momento la centralización no es una preocupación para
-								la mayoría de la gente. Pero intenta cambiarte de "reino" y te
-								darás cuenta de que no es fácil dejar de depender de estas
-								entidades centralizadas. Lo bueno es que hay una tecnología que
-								nos permite seguir beneficiándonos de internet sin los riesgos
-								de la centralización: blockchain.
+								la mayoría de la gente. Pero la realidad es que casi todo lo que
+								damos por sentado de internet depende finalmente de que unas
+								pocas personas no cambien de opinión.{' '}
+							</Text>
+							<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
+								La buena noticia es que hay una tecnología que nos permite
+								seguir beneficiándonos de internet sin los riesgos de la
+								centralización: blockchain.
 							</Text>
 						</Box>
 						<Box mb={5} pl={{ md: 10 }}>

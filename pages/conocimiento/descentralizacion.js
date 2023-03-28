@@ -39,8 +39,8 @@ export default function Descentralizacion() {
 					>
 						<Box w={{ base: '100%', md: '50%' }}>
 							<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
-								Intenta hacer memoria de los pasos que recién seguiste para
-								encontrar esta página.
+								Intenta hacer memoria de los pasos que seguiste para encontrar
+								esta página.
 							</Text>
 							<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
 								Una opción bastante probable es que hayas ocupado algún motor de

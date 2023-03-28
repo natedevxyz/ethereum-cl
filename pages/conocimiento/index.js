@@ -37,8 +37,7 @@ export default function Conocimiento() {
 						<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
 							¿Cómo funciona internet?, ¿cómo funciona el correo electrónico?,
 							¿y las redes sociales?. La verdad no es necesario entender cómo
-							funcionan estas tecnologías para recibir sus beneficios como
-							usuarios.
+							funcionan estas tecnologías para beneficiarse como usuario.
 						</Text>
 						<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
 							Entonces, ¿por qué valdría la pena tratar de entender cómo
@@ -49,10 +48,10 @@ export default function Conocimiento() {
 						</Text>
 						<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
 							Es muy probable, al igual que con otras tecnologías, que con el
-							tiempo cada vez sea más fácil interactuar con blockchain. Pero la
-							historia siempre recompensa a los que se atreven a innovar y es
-							por eso que hicimos una recopilación de los conceptos clave para
-							entender cómo funciona blockchain.
+							tiempo cada vez sea más fácil interactuar con blockchain. Pero
+							sabiendo que la historia favorece a los que toman la iniciativa
+							hicimos una recopilación de los conceptos clave para entender cómo
+							funciona blockchain.
 						</Text>
 					</Box>
 					<Flex justify="center">

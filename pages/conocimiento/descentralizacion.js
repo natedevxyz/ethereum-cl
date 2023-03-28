@@ -72,8 +72,8 @@ export default function Descentralizacion() {
 								Las compañías tecnológicas como Google tienen como principal
 								prioridad la rentabilidad, y aunque eso no es algo malo, sí
 								habrá un conflicto de intereses cuando un grupo pequeño tenga
-								que decidir entre los resultados económicos y el bien de los
-								usuarios.
+								que decidir entre los resultados económicos y romper reglas ya
+								establecidas de manera unilateral.
 							</Text>
 							<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
 								Hasta el momento la centralización no es una preocupación para

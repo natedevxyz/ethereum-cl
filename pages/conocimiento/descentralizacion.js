@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import NextLink from 'next/link';
 import Image from 'next/image';
-import Google from '../../public/google.jpg';
+import google from '../../public/google.jpg';
 import Wrapper from '../../components/Wrapper';
 import { SlArrowLeft } from 'react-icons/sl';
-import { Flex, Text, Link, Box, Img } from '@chakra-ui/react';
+import { Flex, Text, Link, Box } from '@chakra-ui/react';
 
 export default function Descentralizacion() {
 	return (
@@ -88,13 +88,9 @@ export default function Descentralizacion() {
 							</Text>
 						</Box>
 						<Box mb={5} pl={{ md: 10 }}>
-							<Img
-								as={Image}
-								position={{ base: 'static', md: 'sticky' }}
-								top="4.5rem"
-								src={Google}
-								fit="contain"
-							></Img>
+							<Box position={{ base: 'static', md: 'sticky' }} top="4.5rem">
+								<Image src={google} alt="Castle doodle" />
+							</Box>
 						</Box>
 					</Flex>
 				</Flex>

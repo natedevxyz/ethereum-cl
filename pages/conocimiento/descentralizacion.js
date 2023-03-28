@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import NextLink from 'next/link';
 import Image from 'next/image';
-//import google from '../../public/google.jpg';
+import google from '../../public/google.jpg';
 import Wrapper from '../../components/Wrapper';
 import { SlArrowLeft } from 'react-icons/sl';
 import { Flex, Text, Link, Box } from '@chakra-ui/react';
@@ -89,7 +89,7 @@ export default function Descentralizacion() {
 						</Box>
 						<Box mb={5} pl={{ md: 10 }}>
 							<Box position={{ base: 'static', md: 'sticky' }} top="4.5rem">
-								{/* <Image src={google} alt="Castle doodle" /> */}
+								<Image src={google} alt="Castle doodle" />
 							</Box>
 						</Box>
 					</Flex>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Flex, Link, Image, Text } from '@chakra-ui/react';
 import { FaTwitter, FaHeart } from 'react-icons/fa';
 

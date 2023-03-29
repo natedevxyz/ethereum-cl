@@ -3,6 +3,7 @@ import NextLink from 'next/link';
 import Image from 'next/image';
 import google from '../../public/google.jpg';
 import Wrapper from '../../components/Wrapper';
+import TopButton from '../../components/TopButton';
 import { SlArrowLeft } from 'react-icons/sl';
 import { Flex, Text, Link, Box } from '@chakra-ui/react';
 
@@ -93,6 +94,7 @@ export default function Descentralizacion() {
 							</Box>
 						</Box>
 					</Flex>
+					<TopButton />
 				</Flex>
 			</Wrapper>
 		</>

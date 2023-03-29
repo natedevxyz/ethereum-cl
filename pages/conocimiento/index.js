@@ -58,7 +58,7 @@ export default function Conocimiento() {
 						<Flex
 							flexDirection="column"
 							align="center"
-							rounded="2xl"
+							borderRadius="2xl"
 							border="1px"
 							borderColor={!cardActive ? 'gray.200' : '#AAEEEC'}
 							p={8}
@@ -75,7 +75,7 @@ export default function Conocimiento() {
 								position="absolute"
 								top="5rem"
 								zIndex={-1}
-								rounded="full"
+								borderRadius="full"
 								opacity={0.4}
 								filter="blur(50px)"
 							/>
@@ -90,13 +90,13 @@ export default function Conocimiento() {
 											Conceptos básicos
 										</Text>
 										<motion.div
-											whileHover={{
-												scale: 1.5,
-												transition: { duration: 0.1 },
-											}}
-											whileTap={{
-												scale: 1.5,
-												transition: { duration: 0.1 },
+											animate={{
+												scale: [1, 1.3, 1],
+												transition: {
+													ease: 'linear',
+													duration: 2,
+													repeat: Infinity,
+												},
 											}}
 											onClick={() => setCardActive(true)}
 										>
@@ -136,15 +136,15 @@ export default function Conocimiento() {
 											w="100%"
 											py="1rem"
 											rounded="full"
-											border="1px"
-											borderColor="gray.200"
+											border="2px"
+											borderColor="#4D81F7"
 											bg="rgba(255, 255, 255, 0)"
 										>
 											<Text
 												fontWeight="normal"
 												letterSpacing="1px"
 												borderRadius="full"
-												color="gray.700"
+												color="black"
 												align="center"
 											>
 												Descentralización

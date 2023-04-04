@@ -88,9 +88,9 @@ export default function Descentralizacion() {
 								centralización: blockchain.
 							</Text>
 						</Box>
-						<Box mb={5} pl={{ md: 10 }}>
+						<Box mb={5} pl={{ md: 10 }} maxW={{ md: '50%' }}>
 							<Box position={{ base: 'static', md: 'sticky' }} top="4.5rem">
-								<Image src={google} alt="Castle doodle" />
+								<Image src={google} alt="Castle doodle" priority={true} />
 							</Box>
 						</Box>
 					</Flex>

@@ -31,7 +31,7 @@ export default function TopButton() {
 					h={10}
 					borderRadius="full"
 					onClick={() => scrollUp()}
-					right={{ base: '1.5rem', md: '46%' }}
+					right={{ base: '1.5rem', md: '45%' }}
 					bottom={{ base: '1.5rem', md: '30vh' }}
 					border="2px"
 					borderColor={{ base: '#F8650A', md: 'gray.200' }}

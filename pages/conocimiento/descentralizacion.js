@@ -40,7 +40,7 @@ export default function Descentralizacion() {
 						flexDirection={{ base: 'column-reverse', md: 'row' }}
 						justify="center"
 					>
-						<Box w={{ base: '100%', md: '50%' }}>
+						<Box w={{ base: '100%', md: '50%' }} mr={{ md: 10 }}>
 							<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
 								Intenta hacer memoria de los pasos que seguiste para encontrar
 								esta página.
@@ -90,11 +90,18 @@ export default function Descentralizacion() {
 						</Box>
 						<Box mb={5} pl={{ md: 10 }} maxW={{ md: '50%' }}>
 							<Box position={{ base: 'static', md: 'sticky' }} top="4.5rem">
-								<Image src={google} alt="Castle doodle" priority={true} />
+								<Image
+									style={{
+										borderRadius: '0.5rem',
+									}}
+									src={google}
+									alt="Castle doodle"
+									priority={true}
+								/>
 							</Box>
 						</Box>
 					</Flex>
-					<TopButton />
+					<TopButton percentage={'45%'} />
 				</Flex>
 			</Wrapper>
 		</>

@@ -101,7 +101,7 @@ export default function Conocimiento() {
 											onClick={() => setCardActive(true)}
 										>
 											<Flex>
-												<FaStar fontSize={44} color="#FD8A5E" />
+												<FaStar fontSize={44} color="#F97D31" />
 											</Flex>
 										</motion.div>
 										<Text

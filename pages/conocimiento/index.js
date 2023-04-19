@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import NextLink from 'next/link';
+import Image from 'next/image';
+import knowlegde from '../../public/knowledge.png';
 import Wrapper from '../../components/Wrapper';
 import { Flex, Text, Box } from '@chakra-ui/react';
 import { FaStar } from 'react-icons/fa';
@@ -22,38 +24,46 @@ export default function Conocimiento() {
 				<Flex
 					minH={'92vh'}
 					flexDirection="column"
-					mx={{ base: 7, md: 32 }}
-					mt={{ base: 7, md: 10 }}
+					mx={{ base: 7, lg: 32 }}
+					mt={{ base: 7, lg: 10 }}
 				>
 					<Text
-						fontSize={{ base: '3xl', md: '5xl' }}
+						fontSize={{ base: '3xl', lg: '5xl' }}
 						fontWeight="bold"
 						color="#4D81F7"
 						mb={5}
 					>
 						Conocimiento
 					</Text>
-					<Box mb={5}>
-						<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
-							¿Cómo funciona internet?, ¿cómo funciona el correo electrónico?,
-							¿y las redes sociales?. La verdad no es necesario entender cómo
-							funcionan estas tecnologías para beneficiarse como usuario.
-						</Text>
-						<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
-							Entonces, ¿por qué valdría la pena tratar de entender cómo
-							funciona Ethereum?. La respuesta tiene que ver con la
-							descentralización. Dejar de depender de entidades centralizadas
-							tiene sus beneficios, pero también implica transferir más
-							responsabilidades a los usuarios.
-						</Text>
-						<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
-							Es muy probable, al igual que con otras tecnologías, que con el
-							tiempo cada vez sea más fácil interactuar con blockchain. Pero
-							sabiendo que la historia favorece a los que toman la iniciativa
-							hicimos una recopilación de los conceptos clave para entender cómo
-							funciona blockchain.
-						</Text>
-					</Box>
+					<Flex
+						flexDirection={{ base: 'column-reverse', lg: 'row' }}
+						justify="center"
+					>
+						<Box mb={5} w={{ base: '100%', lg: '50%' }} mr={{ lg: 10 }}>
+							<Text textAlign="justify" mb={5} fontSize={{ lg: 'lg' }}>
+								¿Cómo funciona internet?, ¿cómo funciona el correo electrónico?,
+								¿y las redes sociales?. La verdad no es necesario entender cómo
+								funcionan estas tecnologías para beneficiarse como usuario.
+							</Text>
+							<Text textAlign="justify" mb={5} fontSize={{ lg: 'lg' }}>
+								Entonces, ¿por qué valdría la pena tratar de entender cómo
+								funciona Ethereum?. La respuesta tiene que ver con la
+								descentralización. Dejar de depender de entidades centralizadas
+								tiene sus beneficios, pero también implica transferir más
+								responsabilidades a los usuarios.
+							</Text>
+							<Text textAlign="justify" mb={5} fontSize={{ lg: 'lg' }}>
+								Es muy probable, al igual que con otras tecnologías, que con el
+								tiempo cada vez sea más fácil interactuar con blockchain. Pero
+								sabiendo que la historia favorece a los que toman la iniciativa
+								hicimos una recopilación de los conceptos clave para entender
+								cómo funciona blockchain.
+							</Text>
+						</Box>
+						<Box mb={5} pl={{ lg: 10 }} maxW={{ lg: '50%' }} mt={{ lg: -28 }}>
+							<Image src={knowlegde} alt="Person studying" priority={true} />
+						</Box>
+					</Flex>
 					<Flex justify="center">
 						<Flex
 							flexDirection="column"
@@ -63,7 +73,7 @@ export default function Conocimiento() {
 							borderColor={!cardActive ? 'gray.200' : '#AAEEEC'}
 							p={8}
 							minH="23rem"
-							w={{ base: '85%', md: '25%' }}
+							w={{ base: '85%', lg: '25%' }}
 							boxShadow="xs"
 							position="relative"
 							zIndex={0}
@@ -83,7 +93,7 @@ export default function Conocimiento() {
 								<>
 									<Flex flexDirection="column" align="center">
 										<Text
-											fontSize={{ base: 'xl', md: '2xl' }}
+											fontSize={{ base: 'xl', lg: '2xl' }}
 											color="#3C77F8"
 											mb={16}
 										>
@@ -105,9 +115,9 @@ export default function Conocimiento() {
 											</Flex>
 										</motion.div>
 										<Text
-											mt={{ base: 24, md: 20 }}
+											mt={{ base: 24, lg: 20 }}
 											textAlign="justify"
-											fontSize={{ base: 'sm', md: 'md' }}
+											fontSize={{ base: 'sm', lg: 'md' }}
 											color="gray.700"
 										>
 											Si todo esto te parece muy complicado este es el lugar

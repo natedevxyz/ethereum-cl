@@ -14,14 +14,14 @@ export default function Trabajando() {
 			<Wrapper>
 				<Flex
 					h={'62vh'}
-					flexDirection={{ base: 'column', md: 'row' }}
+					flexDirection={{ base: 'column', lg: 'row' }}
 					justifyContent="space-evenly"
-					mx={{ base: 10, md: 20 }}
+					mx={{ base: 10, lg: 20 }}
 				>
 					<Text
 						fontSize="3xl"
-						alignSelf={{ md: 'center' }}
-						pr={{ md: 10 }}
+						alignSelf={{ lg: 'center' }}
+						pr={{ lg: 10 }}
 						color="gray.700"
 					>
 						Estamos trabajando para entregarte más contenido de calidad
@@ -29,8 +29,8 @@ export default function Trabajando() {
 					<Image
 						src="/eth.png"
 						fit="contain"
-						maxW={{ base: '18rem', md: '35rem' }}
-						alignSelf={{ base: 'center', md: 'flex-end' }}
+						maxW={{ base: '18rem', lg: '35rem' }}
+						alignSelf={{ base: 'center', lg: 'flex-end' }}
 					></Image>
 				</Flex>
 			</Wrapper>

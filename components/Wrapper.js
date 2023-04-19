@@ -23,7 +23,7 @@ export default function Wrapper({ children }) {
 		<Flex minH={'100vh'} flexDirection="column">
 			<Flex
 				py={2}
-				px={{ base: 5, md: 12 }}
+				px={{ base: 5, lg: 12 }}
 				justifyContent="space-between"
 				alignItems="center"
 				h={'8vh'}

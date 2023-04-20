@@ -3,6 +3,7 @@ import NextLink from 'next/link';
 import Image from 'next/image';
 import knowlegde from '../../public/knowledge.png';
 import Wrapper from '../../components/Wrapper';
+import Card from '../../components/Card';
 import { Flex, Text, Box } from '@chakra-ui/react';
 import { FaStar } from 'react-icons/fa';
 import { RxCross1 } from 'react-icons/rx';
@@ -25,7 +26,7 @@ export default function Conocimiento() {
 					minH={'92vh'}
 					flexDirection="column"
 					mx={{ base: 7, lg: 32 }}
-					mt={{ base: 7, lg: 10 }}
+					my={{ base: 7, lg: 10 }}
 				>
 					<Text
 						fontSize={{ base: '3xl', lg: '5xl' }}
@@ -90,91 +91,62 @@ export default function Conocimiento() {
 								filter="blur(50px)"
 							/>
 							{!cardActive && (
-								<>
-									<Flex flexDirection="column" align="center">
-										<Text
-											fontSize={{ base: 'xl', lg: '2xl' }}
-											color="#3C77F8"
-											mb={16}
-										>
-											Conceptos básicos
-										</Text>
-										<motion.div
-											animate={{
-												scale: [1, 1.3, 1],
-												transition: {
-													ease: 'linear',
-													duration: 2,
-													repeat: Infinity,
-												},
-											}}
-											onClick={() => setCardActive(true)}
-										>
-											<Flex>
-												<FaStar fontSize={44} color="#FD8A5E" />
-											</Flex>
-										</motion.div>
-										<Text
-											mt={{ base: 24, lg: 20 }}
-											textAlign="justify"
-											fontSize={{ base: 'sm', lg: 'md' }}
-											color="gray.700"
-										>
-											Si todo esto te parece muy complicado este es el lugar
-											perfecto para empezar.
-										</Text>
-									</Flex>
-								</>
+								<Card
+									title="Conceptos básicos"
+									onClick={() => setCardActive(true)}
+									text="Si todo esto te parece muy complicado este es el lugar
+											perfecto para empezar."
+								>
+									<FaStar fontSize={44} color="#FD8A5E" />
+								</Card>
 							)}
 							{cardActive && (
-								<>
-									<Flex
-										flexDirection="column"
-										justify="space-between"
-										align="center"
+								<Flex
+									flexDirection="column"
+									justify="space-between"
+									align="center"
+									w="100%"
+									h="100%"
+								>
+									<Box
+										as={NextLink}
+										href="/conocimiento/descentralizacion"
+										_hover={{
+											borderColor: '#F8650A',
+											bg: 'white',
+										}}
+										boxShadow="lg"
 										w="100%"
-										h="100%"
+										py="1rem"
+										rounded="full"
+										border="2px"
+										borderColor="#4D81F7"
+										bg="rgba(255, 255, 255, 0)"
 									>
-										<Box
-											as={NextLink}
-											href="/conocimiento/descentralizacion"
-											_hover={{
-												borderColor: '#F8650A',
-												bg: 'white',
-											}}
-											boxShadow="lg"
-											w="100%"
-											py="1rem"
-											rounded="full"
-											border="2px"
-											borderColor="#4D81F7"
-											bg="rgba(255, 255, 255, 0)"
+										<Text
+											fontWeight="normal"
+											letterSpacing="1px"
+											borderRadius="full"
+											color="black"
+											align="center"
 										>
-											<Text
-												fontWeight="normal"
-												letterSpacing="1px"
-												borderRadius="full"
-												color="black"
-												align="center"
-											>
-												Descentralización
-											</Text>
-										</Box>
-										<motion.div
-											whileHover={{
-												scale: 1.5,
-												transition: { duration: 0.1 },
-											}}
-											whileTap={{
-												scale: 1.5,
-												transition: { duration: 0.1 },
-											}}
-											onClick={() => setCardActive(false)}
-										>
-											<RxCross1 fontSize={24} color="#2B6DF8" />
-										</motion.div>
-									</Flex>
-								</>
+											Descentralización
+										</Text>
+									</Box>
+									<motion.div
+										whileHover={{
+											scale: 1.5,
+											transition: { duration: 0.1 },
+										}}
+										whileTap={{
+											scale: 1.5,
+											transition: { duration: 0.1 },
+										}}
+										onClick={() => setCardActive(false)}
+									>
+										<RxCross1 fontSize={24} color="#2B6DF8" />
+									</motion.div>
+								</Flex>
 							)}
 						</Flex>
 					</Flex>

@@ -21,7 +21,7 @@ export default function Descentralizacion() {
 					minH={'92vh'}
 					flexDirection="column"
 					mx={{ base: 7, lg: 32 }}
-					mt={{ base: 7, lg: 10 }}
+					my={{ base: 7, lg: 10 }}
 				>
 					<Link
 						as={NextLink}

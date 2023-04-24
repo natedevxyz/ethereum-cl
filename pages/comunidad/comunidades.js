@@ -46,36 +46,15 @@ export default function Comunidades() {
 							title="ETH Kipu"
 							src="/eth-kipu.png"
 							alt="ETH Kipu logo"
-							text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-							enim ad minim veniam."
+							text="Una organización sin fines de lucro dedicada a apoyar el ecosistema Ethereum en América Latina. Co-creada por Líderes de la Comunidad de Latam alineados con los valores de Ethereum."
 						>
-							<NextLink href="/">
+							<NextLink href="https://ethkipu.org/">
 								<TbWorld />
 							</NextLink>
-							<NextLink href="/">
+							<NextLink href="https://twitter.com/ethkipu">
 								<TbBrandTwitter />
 							</NextLink>
-							<NextLink href="/">
-								<TbBrandDiscord />
-							</NextLink>
-						</FeaturedCard>
-						<FeaturedCard
-							title="ETH Kipu"
-							src="/eth-kipu.png"
-							alt="ETH Kipu logo"
-							text="
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-							enim ad minim veniam."
-						>
-							<NextLink href="/">
-								<TbWorld />
-							</NextLink>
-							<NextLink href="/">
-								<TbBrandTwitter />
-							</NextLink>
-							<NextLink href="/">
+							<NextLink href="https://discord.gg/rRJJeSjBFZ">
 								<TbBrandDiscord />
 							</NextLink>
 						</FeaturedCard>

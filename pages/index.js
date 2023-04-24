@@ -1,8 +1,9 @@
 import { useRef } from 'react';
 import Head from 'next/head';
+import NextLink from 'next/link';
 import Wrapper from '../components/Wrapper';
 import '@fontsource/lora/500.css';
-import { Flex, Image, Text, Box } from '@chakra-ui/react';
+import { Flex, Image, Text, Box, Button } from '@chakra-ui/react';
 import { motion, useInView } from 'framer-motion';
 
 export default function Inicio() {
@@ -120,7 +121,15 @@ export default function Inicio() {
 						/>
 					</motion.div>
 					<Flex flexDirection="column" maxWidth={{ lg: '40%' }}>
-						<Box mb={{ base: 7, lg: 14 }} pr={{ lg: 10 }}>
+						<Text
+							fontSize={{ base: '3xl', lg: '5xl' }}
+							fontWeight="bold"
+							color="#4D81F7"
+							mb={{ base: 5, lg: 7 }}
+						>
+							Exploremos hoy el internet del mañana
+						</Text>
+						<Box mb={{ base: 5, lg: 7 }} pr={{ lg: 10 }}>
 							<Text mb={5} textAlign="justify" fontSize={{ lg: 'xl' }}>
 								Hace unas décadas nadie podría haber predicho el impacto que
 								tendría el teléfono en nuestra sociedad.
@@ -134,13 +143,23 @@ export default function Inicio() {
 								digital.
 							</Text>
 						</Box>
-						<Text
-							fontSize={{ base: '3xl', lg: '5xl' }}
-							fontWeight="bold"
-							color="#4D81F7"
+						<Button
+							as={NextLink}
+							href="/conocimiento"
+							bgGradient="linear(to-l, #FCA074 0%, #FB838B 100%)"
+							fontWeight="normal"
+							letterSpacing="1px"
+							borderRadius="full"
+							color="black"
+							_hover={{
+								bgGradient: 'linear(to-r, #64E1DE 0%, #53D3E0 100%)',
+								color: 'black',
+							}}
+							alignSelf="start"
+							mb={5}
 						>
-							Exploremos hoy el internet del mañana
-						</Text>
+							Explorar
+						</Button>
 					</Flex>
 				</Flex>
 			</Wrapper>

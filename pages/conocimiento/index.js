@@ -78,10 +78,6 @@ export default function Conocimiento() {
 							boxShadow="xs"
 							position="relative"
 							zIndex={0}
-							onClick={() => setCardActive(!cardActive)}
-							_hover={{
-								cursor: 'pointer',
-							}}
 						>
 							<Box
 								h="10rem"
@@ -99,6 +95,8 @@ export default function Conocimiento() {
 									title="Conceptos básicos"
 									text="Si todo esto te parece muy complicado este es el lugar
 											perfecto para empezar."
+									onClick={() => setCardActive(true)}
+									zIndex={1}
 								>
 									<FaStar fontSize={44} color="#FD8A5E" />
 								</Card>
@@ -145,6 +143,7 @@ export default function Conocimiento() {
 											scale: 1.5,
 											transition: { duration: 0.1 },
 										}}
+										onClick={() => setCardActive(false)}
 									>
 										<RxCross1 fontSize={24} color="#2B6DF8" />
 									</motion.div>

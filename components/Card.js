@@ -1,9 +1,16 @@
 import { Flex, Text } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
-export default function Card({ title, text, children }) {
+export default function Card({ title, text, onClick, children }) {
 	return (
-		<Flex flexDirection="column" align="center">
+		<Flex
+			flexDirection="column"
+			align="center"
+			onClick={onClick}
+			_hover={{
+				cursor: 'pointer',
+			}}
+		>
 			<Text fontSize={{ base: 'xl', lg: '2xl' }} color="#3C77F8" mb={16}>
 				{title}
 			</Text>

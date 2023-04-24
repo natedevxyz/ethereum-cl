@@ -18,8 +18,8 @@ export default function FeaturedCard({ title, text, src, alt, children }) {
 					fit="contain"
 					src={src}
 					alt={alt}
-					maxW={{ base: '5rem', lg: '8rem' }}
-					minH={{ base: '5rem', lg: '10rem' }}
+					maxW={{ base: '6rem', lg: '8rem' }}
+					minH={{ base: '6rem', lg: '10rem' }}
 					border="4px"
 					borderColor="#C0F2F1"
 					borderRadius="xl"
@@ -54,7 +54,7 @@ export default function FeaturedCard({ title, text, src, alt, children }) {
 						{title}
 					</Text>
 				</Show>
-				<Text>{text}</Text>
+				<Text textAlign="justify">{text}</Text>
 			</Flex>
 		</Flex>
 	);

@@ -129,7 +129,7 @@ export default function Inicio() {
 						>
 							Exploremos hoy el internet del mañana
 						</Text>
-						<Box mb={{ base: 5, lg: 7 }} pr={{ lg: 10 }}>
+						<Box mb={7} pr={{ lg: 10 }}>
 							<Text mb={5} textAlign="justify" fontSize={{ lg: 'xl' }}>
 								Hace unas décadas nadie podría haber predicho el impacto que
 								tendría el teléfono en nuestra sociedad.

@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import community from '../../public/community.png';
@@ -78,6 +79,8 @@ export default function Conocimiento() {
 							_active={{
 								borderColor: '#AAEEEC',
 							}}
+							as={NextLink}
+							href="/comunidad/comunidades"
 						>
 							<Box
 								h="10rem"
@@ -92,7 +95,6 @@ export default function Conocimiento() {
 							/>
 							<Card
 								title="Comunidades"
-								onClick={() => router.push('/comunidad/comunidades')}
 								text="Un listado de comunidades para todos los gustos, solo tienes que elegir."
 							>
 								<HiUserGroup fontSize={44} color="#FD8A5E" />

@@ -1,7 +1,7 @@
 import { Flex, Text } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
-export default function Card({ title, onClick, text, children }) {
+export default function Card({ title, text, children }) {
 	return (
 		<Flex flexDirection="column" align="center">
 			<Text fontSize={{ base: 'xl', lg: '2xl' }} color="#3C77F8" mb={16}>
@@ -16,9 +16,8 @@ export default function Card({ title, onClick, text, children }) {
 						repeat: Infinity,
 					},
 				}}
-				onClick={onClick}
 			>
-				<Flex _hover={{ cursor: 'pointer' }}>{children}</Flex>
+				<Flex>{children}</Flex>
 			</motion.div>
 			<Text
 				mt={{ base: 24, lg: 20 }}

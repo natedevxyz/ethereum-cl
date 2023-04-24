@@ -12,6 +12,7 @@ export default function FeaturedCard({ title, text, src, alt, children }) {
 			py={8}
 			flexDirection={{ base: 'column', lg: 'row' }}
 			mb={5}
+			boxShadow="xs"
 		>
 			<Flex flexDirection={{ base: 'row', lg: 'column' }} mr={{ lg: 8 }}>
 				<Image

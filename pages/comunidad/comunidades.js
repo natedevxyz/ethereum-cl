@@ -4,7 +4,13 @@ import Wrapper from '../../components/Wrapper';
 import FeaturedCard from '../../components/FeaturedCard';
 import { SlArrowLeft } from 'react-icons/sl';
 import { Flex, Text, Link } from '@chakra-ui/react';
-import { TbWorld, TbBrandTwitter, TbBrandDiscord } from 'react-icons/tb';
+import {
+	TbWorld,
+	TbBrandTwitter,
+	TbBrandDiscord,
+	TbBrandTelegram,
+	TbBrandInstagram,
+} from 'react-icons/tb';
 
 export default function Comunidades() {
 	return (
@@ -54,6 +60,12 @@ export default function Comunidades() {
 							<NextLink href="https://twitter.com/ethkipu">
 								<TbBrandTwitter />
 							</NextLink>
+							{/* <NextLink href="https://instagram.com/ethkipu">
+								<TbBrandInstagram />
+							</NextLink>
+							<NextLink href="https://t.me/ETHkipu">
+								<TbBrandTelegram />
+							</NextLink> */}
 							<NextLink href="https://discord.gg/rRJJeSjBFZ">
 								<TbBrandDiscord />
 							</NextLink>
@@ -66,6 +78,9 @@ export default function Comunidades() {
 						>
 							<NextLink href="https://twitter.com/PolygonGuildSCL">
 								<TbBrandTwitter />
+							</NextLink>
+							<NextLink href="https://t.me/+eV1Smh7HCvMwODk1">
+								<TbBrandTelegram />
 							</NextLink>
 						</FeaturedCard>
 					</Flex>

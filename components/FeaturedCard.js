@@ -19,8 +19,10 @@ export default function FeaturedCard({ title, text, src, alt, children }) {
 					fit="contain"
 					src={src}
 					alt={alt}
+					minW={{ base: '6rem', lg: '8rem' }}
 					maxW={{ base: '6rem', lg: '8rem' }}
 					minH={{ base: '6rem', lg: '10rem' }}
+					maxH={{ base: '6rem', lg: '10rem' }}
 					border="4px"
 					borderColor="#C0F2F1"
 					borderRadius="xl"

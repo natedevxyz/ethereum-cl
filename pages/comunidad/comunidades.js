@@ -58,6 +58,16 @@ export default function Comunidades() {
 								<TbBrandDiscord />
 							</NextLink>
 						</FeaturedCard>
+						<FeaturedCard
+							title="Polygon Guild Santiago"
+							src="/polygon-guild.png"
+							alt="Polygon Guild logo"
+							text="Una comunidad de desarrolladores y entusiastas del protocolo Polygon. Es un espacio para conectar, colaborar y aprender en equipo sobre tecnologías web3."
+						>
+							<NextLink href="https://twitter.com/PolygonGuildSCL">
+								<TbBrandTwitter />
+							</NextLink>
+						</FeaturedCard>
 					</Flex>
 				</Flex>
 			</Wrapper>

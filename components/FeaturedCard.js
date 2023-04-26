@@ -57,7 +57,7 @@ export default function FeaturedCard({ title, text, src, alt, children }) {
 						{title}
 					</Text>
 				</Show>
-				<Text textAlign="justify">{text}</Text>
+				<Text>{text}</Text>
 			</Flex>
 		</Flex>
 	);

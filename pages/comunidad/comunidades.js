@@ -46,7 +46,7 @@ export default function Comunidades() {
 							title="ETH Kipu"
 							src="/eth-kipu.png"
 							alt="ETH Kipu logo"
-							text="Una organización sin fines de lucro dedicada a apoyar el ecosistema Ethereum en América Latina. Co-creada por Líderes de la Comunidad de Latam alineados con los valores de Ethereum."
+							text="Organización sin fines de lucro dedicada a apoyar el ecosistema Ethereum en América Latina. Co-creada por líderes de la comunidad de Latam alineados con los valores de Ethereum."
 						>
 							<NextLink href="https://ethkipu.org/">
 								<TbWorld />
@@ -62,7 +62,7 @@ export default function Comunidades() {
 							title="Polygon Guild Santiago"
 							src="/polygon-guild.png"
 							alt="Polygon Guild logo"
-							text="Una comunidad de desarrolladores y entusiastas del protocolo Polygon. Es un espacio para conectar, colaborar y aprender en equipo sobre tecnologías web3."
+							text="Comunidad de desarrolladores y entusiastas del protocolo Polygon. Es un espacio para conectar, colaborar y aprender en equipo sobre tecnologías web3."
 						>
 							<NextLink href="https://twitter.com/PolygonGuildSCL">
 								<TbBrandTwitter />

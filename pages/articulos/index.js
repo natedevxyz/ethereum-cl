@@ -45,11 +45,10 @@ export default function Articulos() {
 							<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
 								Intentar estar al día con todo lo que pasa en el ecosistema
 								crypto puede ser agotador. La tecnología en general siempre
-								avanzará a un ritmo imparable debido a que cada descubrimiento
+								avanzará a un ritmo acelerado debido a que cada descubrimiento
 								significativo permite mejorar lo que ya existe y eso a su vez
 								genera nuevas oportunidades de innovación que también pueden
-								traducirse en mejoras, y así sucesivamente con ciclos cada vez
-								más cortos.
+								traducirse en mejoras, y así sucesivamente.
 							</Text>
 							<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
 								Por suerte hay muchas personas de habla hispana muy activas en

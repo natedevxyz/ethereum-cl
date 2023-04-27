@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { SlArrowUp } from 'react-icons/sl';
 import { Flex } from '@chakra-ui/react';
 
-export default function TopButton() {
+export default function TopButton({ percentage }) {
 	const [showButton, setShowButton] = useState(false);
 
 	useEffect(() => {
@@ -31,8 +31,8 @@ export default function TopButton() {
 					h={10}
 					borderRadius="full"
 					onClick={() => scrollUp()}
-					right={{ base: '1.5rem', lg: '45%' }}
-					bottom={{ base: '1.5rem', lg: '30vh' }}
+					right={{ base: '1.5rem', md: percentage }}
+					bottom={{ base: '1.5rem', md: '28vh' }}
 					border="2px"
 					borderColor={{ base: '#F8650A', lg: 'gray.200' }}
 					bg="white"

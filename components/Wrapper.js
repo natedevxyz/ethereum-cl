@@ -66,7 +66,7 @@ export default function Wrapper({ children }) {
 								<MenuList>
 									<MenuItem
 										as={NextLink}
-										href="/trabajando"
+										href="/articulos"
 										_focus={{
 											bgGradient: 'linear(to-l, #FCA074 0%, #FB838B 100%)',
 										}}
@@ -121,7 +121,7 @@ export default function Wrapper({ children }) {
 					<HStack>
 						<Button
 							as={NextLink}
-							href="/trabajando"
+							href="/articulos"
 							bgGradient="linear(to-r, #64E1DE 0%, #53D3E0 100%)"
 							fontWeight="normal"
 							letterSpacing="1px"

@@ -100,7 +100,7 @@ export default function Descentralizacion() {
 							</Box>
 						</Box>
 					</Flex>
-					<TopButton />
+					<TopButton percentage={'45%'} />
 				</Flex>
 			</Wrapper>
 		</>

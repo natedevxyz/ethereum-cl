@@ -1,34 +1,23 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import customTheme from '../styles/theme';
-import { Global, css } from '@emotion/react';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
-const GlobalStyle = ({ children }) => {
-	return (
-		<>
-			<Global
-				styles={css`
-					html {
-						scroll-behavior: smooth;
-					}
-					#__next {
-						display: flex;
-						flex-direction: column;
-						min-height: 100vh;
-					}
-				`}
-			/>
-			{children}
-		</>
-	);
-};
+const queryClient = new QueryClient({
+	defaultOptions: {
+		queries: {
+			refetchOnWindowFocus: false,
+			retry: 1,
+		},
+	},
+});
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<ChakraProvider resetCSS theme={customTheme}>
-			<GlobalStyle>
+		<QueryClientProvider client={queryClient}>
+			<ChakraProvider resetCSS theme={customTheme}>
 				<Component {...pageProps} />
-			</GlobalStyle>
-		</ChakraProvider>
+			</ChakraProvider>
+		</QueryClientProvider>
 	);
 }
 

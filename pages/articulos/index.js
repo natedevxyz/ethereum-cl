@@ -46,7 +46,7 @@ export default function Articulos() {
 								Intentar estar al día con todo lo que pasa en el ecosistema
 								crypto puede ser agotador. La tecnología en general siempre
 								avanzará a un ritmo acelerado debido a que cada descubrimiento
-								significativo permite mejorar lo que ya existe y eso a su vez
+								significativo permite mejorar lo que ya existe, eso a su vez
 								genera nuevas oportunidades de innovación que también pueden
 								traducirse en mejoras, y así sucesivamente.
 							</Text>

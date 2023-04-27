@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import NextLink from 'next/link';
+import Image from 'next/image';
+import knowlegde from '../../public/knowledge.png';
 import Wrapper from '../../components/Wrapper';
+import Card from '../../components/Card';
 import { Flex, Text, Box } from '@chakra-ui/react';
 import { FaStar } from 'react-icons/fa';
 import { RxCross1 } from 'react-icons/rx';
@@ -22,38 +25,46 @@ export default function Conocimiento() {
 				<Flex
 					minH={'92vh'}
 					flexDirection="column"
-					mx={{ base: 7, md: 32 }}
-					mt={{ base: 7, md: 10 }}
+					mx={{ base: 7, lg: 32 }}
+					my={{ base: 7, lg: 10 }}
 				>
 					<Text
-						fontSize={{ base: '3xl', md: '5xl' }}
+						fontSize={{ base: '3xl', lg: '5xl' }}
 						fontWeight="bold"
 						color="#4D81F7"
 						mb={5}
 					>
 						Conocimiento
 					</Text>
-					<Box mb={5}>
-						<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
-							¿Cómo funciona internet?, ¿cómo funciona el correo electrónico?,
-							¿y las redes sociales?. La verdad no es necesario entender cómo
-							funcionan estas tecnologías para beneficiarse como usuario.
-						</Text>
-						<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
-							Entonces, ¿por qué valdría la pena tratar de entender cómo
-							funciona Ethereum?. La respuesta tiene que ver con la
-							descentralización. Dejar de depender de entidades centralizadas
-							tiene sus beneficios, pero también implica transferir más
-							responsabilidades a los usuarios.
-						</Text>
-						<Text textAlign="justify" mb={5} fontSize={{ md: 'lg' }}>
-							Es muy probable, al igual que con otras tecnologías, que con el
-							tiempo cada vez sea más fácil interactuar con blockchain. Pero
-							sabiendo que la historia favorece a los que toman la iniciativa
-							hicimos una recopilación de los conceptos clave para entender cómo
-							funciona blockchain.
-						</Text>
-					</Box>
+					<Flex
+						flexDirection={{ base: 'column-reverse', lg: 'row' }}
+						justify="center"
+					>
+						<Box mb={5} w={{ base: '100%', lg: '50%' }} mr={{ lg: 10 }}>
+							<Text textAlign="justify" mb={5} fontSize={{ lg: 'lg' }}>
+								¿Cómo funciona internet?, ¿cómo funciona el correo electrónico?,
+								¿y las redes sociales?. La verdad no es necesario entender cómo
+								funcionan estas tecnologías para beneficiarse como usuario.
+							</Text>
+							<Text textAlign="justify" mb={5} fontSize={{ lg: 'lg' }}>
+								Entonces, ¿por qué valdría la pena tratar de entender cómo
+								funciona Ethereum?. La respuesta tiene que ver con la
+								descentralización. Dejar de depender de entidades centralizadas
+								tiene sus beneficios, pero también implica transferir más
+								responsabilidades a los usuarios.
+							</Text>
+							<Text textAlign="justify" mb={5} fontSize={{ lg: 'lg' }}>
+								Es muy probable, al igual que con otras tecnologías, que con el
+								tiempo cada vez sea más fácil interactuar con blockchain. Pero
+								sabiendo que la historia favorece a los que toman la iniciativa
+								hicimos una recopilación de los conceptos clave para entender
+								cómo funciona blockchain.
+							</Text>
+						</Box>
+						<Box mb={5} pl={{ lg: 10 }} maxW={{ lg: '50%' }} mt={{ lg: -28 }}>
+							<Image src={knowlegde} alt="Person studying" priority={true} />
+						</Box>
+					</Flex>
 					<Flex justify="center">
 						<Flex
 							flexDirection="column"
@@ -63,7 +74,7 @@ export default function Conocimiento() {
 							borderColor={!cardActive ? 'gray.200' : '#AAEEEC'}
 							p={8}
 							minH="23rem"
-							w={{ base: '85%', md: '25%' }}
+							w={{ base: '85%', lg: '25%' }}
 							boxShadow="xs"
 							position="relative"
 							zIndex={0}
@@ -80,91 +91,63 @@ export default function Conocimiento() {
 								filter="blur(50px)"
 							/>
 							{!cardActive && (
-								<>
-									<Flex flexDirection="column" align="center">
-										<Text
-											fontSize={{ base: 'xl', md: '2xl' }}
-											color="#3C77F8"
-											mb={16}
-										>
-											Conceptos básicos
-										</Text>
-										<motion.div
-											animate={{
-												scale: [1, 1.3, 1],
-												transition: {
-													ease: 'linear',
-													duration: 2,
-													repeat: Infinity,
-												},
-											}}
-											onClick={() => setCardActive(true)}
-										>
-											<Flex>
-												<FaStar fontSize={44} color="#F97D31" />
-											</Flex>
-										</motion.div>
-										<Text
-											mt={{ base: 24, md: 20 }}
-											textAlign="justify"
-											fontSize={{ base: 'sm', md: 'md' }}
-											color="gray.700"
-										>
-											Si todo esto te parece muy complicado este es el lugar
-											perfecto para empezar.
-										</Text>
-									</Flex>
-								</>
+								<Card
+									title="Conceptos básicos"
+									text="Si todo esto te parece muy complicado este es el lugar
+											perfecto para empezar."
+									onClick={() => setCardActive(true)}
+									zIndex={1}
+								>
+									<FaStar fontSize={44} color="#FD8A5E" />
+								</Card>
 							)}
 							{cardActive && (
-								<>
-									<Flex
-										flexDirection="column"
-										justify="space-between"
-										align="center"
+								<Flex
+									flexDirection="column"
+									justify="space-between"
+									align="center"
+									w="100%"
+									h="100%"
+								>
+									<Box
+										as={NextLink}
+										href="/conocimiento/descentralizacion"
+										_hover={{
+											borderColor: '#F8650A',
+											bg: 'white',
+										}}
+										boxShadow="lg"
 										w="100%"
-										h="100%"
+										py="1rem"
+										rounded="full"
+										border="2px"
+										borderColor="#4D81F7"
+										bg="rgba(255, 255, 255, 0)"
 									>
-										<Box
-											as={NextLink}
-											href="/conocimiento/descentralizacion"
-											_hover={{
-												borderColor: '#F8650A',
-												bg: 'white',
-											}}
-											boxShadow="lg"
-											w="100%"
-											py="1rem"
-											rounded="full"
-											border="2px"
-											borderColor="#4D81F7"
-											bg="rgba(255, 255, 255, 0)"
+										<Text
+											fontWeight="normal"
+											letterSpacing="1px"
+											borderRadius="full"
+											color="black"
+											align="center"
 										>
-											<Text
-												fontWeight="normal"
-												letterSpacing="1px"
-												borderRadius="full"
-												color="black"
-												align="center"
-											>
-												Descentralización
-											</Text>
-										</Box>
-										<motion.div
-											whileHover={{
-												scale: 1.5,
-												transition: { duration: 0.1 },
-											}}
-											whileTap={{
-												scale: 1.5,
-												transition: { duration: 0.1 },
-											}}
-											onClick={() => setCardActive(false)}
-										>
-											<RxCross1 fontSize={24} color="#2B6DF8" />
-										</motion.div>
-									</Flex>
-								</>
+											Descentralización
+										</Text>
+									</Box>
+									<motion.div
+										whileHover={{
+											scale: 1.5,
+											transition: { duration: 0.1 },
+										}}
+										whileTap={{
+											scale: 1.5,
+											transition: { duration: 0.1 },
+										}}
+										onClick={() => setCardActive(false)}
+									>
+										<RxCross1 fontSize={24} color="#2B6DF8" />
+									</motion.div>
+								</Flex>
 							)}
 						</Flex>
 					</Flex>

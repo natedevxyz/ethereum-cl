@@ -34,7 +34,7 @@ export default function TopButton({ percentage }) {
 					right={{ base: '1.5rem', md: percentage }}
 					bottom={{ base: '1.5rem', md: '28vh' }}
 					border="2px"
-					borderColor={{ base: '#F8650A', md: 'gray.200' }}
+					borderColor={{ base: '#F8650A', lg: 'gray.200' }}
 					bg="white"
 					justify="center"
 					align="center"

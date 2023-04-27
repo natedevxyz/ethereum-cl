@@ -23,7 +23,7 @@ export default function Wrapper({ children }) {
 		<Flex minH={'100vh'} flexDirection="column">
 			<Flex
 				py={2}
-				px={{ base: 5, md: 12 }}
+				px={{ base: 5, lg: 12 }}
 				justifyContent="space-between"
 				alignItems="center"
 				h={'8vh'}
@@ -78,7 +78,7 @@ export default function Wrapper({ children }) {
 									</MenuItem>
 									<MenuItem
 										as={NextLink}
-										href="/trabajando"
+										href="/comunidad"
 										_focus={{
 											bgGradient: 'linear(to-l, #FCA074 0%, #FB838B 100%)',
 										}}
@@ -136,7 +136,7 @@ export default function Wrapper({ children }) {
 						</Button>
 						<Button
 							as={NextLink}
-							href="/trabajando"
+							href="/comunidad"
 							bgGradient="linear(to-r, #64E1DE 0%, #53D3E0 100%)"
 							fontWeight="normal"
 							letterSpacing="1px"

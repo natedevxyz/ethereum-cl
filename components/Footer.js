@@ -26,6 +26,7 @@ export default function Footer() {
 				<Link href="https://twitter.com/natedevxyz" isExternal>
 					<Image
 						src="https://github.com/natedevxyz.png"
+						alt="Picture of natedevxyz"
 						borderRadius="full"
 						boxSize={10}
 					/>

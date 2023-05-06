@@ -120,6 +120,7 @@ export default function Inicio() {
 					>
 						<Image
 							src="/eth-rainbow.png"
+							alt="Ethereum official logo"
 							fit="contain"
 							maxW={{ base: '8rem', lg: '16rem' }}
 							pb={{ base: 0, lg: 10 }}

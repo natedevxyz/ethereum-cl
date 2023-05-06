@@ -39,6 +39,7 @@ export default function Descentralizacion() {
 						mb={5}
 						w={{ base: '100%', lg: '50%' }}
 						mr={{ lg: 10 }}
+						fontFamily="Poppins"
 					>
 						¿Por qué es importante la descentralización?
 					</Text>

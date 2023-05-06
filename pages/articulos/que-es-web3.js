@@ -41,6 +41,7 @@ export default function QueEsWeb3() {
 								fontSize={{ base: '2xl', lg: '4xl' }}
 								color="#4D81F7"
 								mb={5}
+								fontFamily="Poppins"
 							>
 								¿Qué es web3 y por qué está cambiando el mundo?
 							</Text>
@@ -74,7 +75,7 @@ export default function QueEsWeb3() {
 								ml={{ base: 2, lg: 0 }}
 								mt={{ lg: 3 }}
 							>
-								<Text fontSize="lg" mb={1}>
+								<Text fontSize="lg" mb={1} fontFamily="Poppins">
 									Ornella Vallana
 								</Text>
 								<Text fontSize="md" color="gray.600">

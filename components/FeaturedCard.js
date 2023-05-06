@@ -37,6 +37,7 @@ export default function FeaturedCard({ title, text, src, alt, children }) {
 							color="#F8650A"
 							fontWeight="bold"
 							mb={2}
+							fontFamily="Poppins"
 						>
 							{title}
 						</Text>
@@ -53,6 +54,7 @@ export default function FeaturedCard({ title, text, src, alt, children }) {
 						color="#F8650A"
 						fontWeight="bold"
 						mb={2}
+						fontFamily="Poppins"
 					>
 						{title}
 					</Text>

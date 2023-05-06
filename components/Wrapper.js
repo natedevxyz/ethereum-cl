@@ -40,7 +40,12 @@ export default function Wrapper({ children }) {
 					_hover={{ textDecoration: 'none' }}
 				>
 					<Flex alignItems="center">
-						<Image src="/logo.png" boxSize={'2rem'} mr={1} />
+						<Image
+							src="/logo.png"
+							alt="Ethereum logo"
+							boxSize={'2rem'}
+							mr={1}
+						/>
 						<Text fontFamily="Roboto" fontSize="4xl" fontWeight="100">
 							Ξthereum.cl
 						</Text>
@@ -73,6 +78,7 @@ export default function Wrapper({ children }) {
 										justifyContent="end"
 										letterSpacing="1px"
 										color="black"
+										fontFamily="Poppins"
 									>
 										Artículos
 									</MenuItem>
@@ -85,6 +91,7 @@ export default function Wrapper({ children }) {
 										justifyContent="end"
 										letterSpacing="1px"
 										color="black"
+										fontFamily="Poppins"
 									>
 										Comunidad
 									</MenuItem>
@@ -97,6 +104,7 @@ export default function Wrapper({ children }) {
 										justifyContent="end"
 										letterSpacing="1px"
 										color="black"
+										fontFamily="Poppins"
 									>
 										Conocimiento
 									</MenuItem>
@@ -109,6 +117,7 @@ export default function Wrapper({ children }) {
 										justifyContent="end"
 										letterSpacing="1px"
 										color="black"
+										fontFamily="Poppins"
 									>
 										Desarrolladores
 									</MenuItem>
@@ -131,6 +140,7 @@ export default function Wrapper({ children }) {
 								bgGradient: 'linear(to-l, #FCA074 0%, #FB838B 100%)',
 								color: 'black',
 							}}
+							fontFamily="Poppins"
 						>
 							Artículos
 						</Button>
@@ -146,6 +156,7 @@ export default function Wrapper({ children }) {
 								bgGradient: 'linear(to-l, #FCA074 0%, #FB838B 100%)',
 								color: 'black',
 							}}
+							fontFamily="Poppins"
 						>
 							Comunidad
 						</Button>
@@ -161,6 +172,7 @@ export default function Wrapper({ children }) {
 								bgGradient: 'linear(to-l, #FCA074 0%, #FB838B 100%)',
 								color: 'black',
 							}}
+							fontFamily="Poppins"
 						>
 							Conocimiento
 						</Button>
@@ -176,6 +188,7 @@ export default function Wrapper({ children }) {
 								bgGradient: 'linear(to-l, #FCA074 0%, #FB838B 100%)',
 								color: 'black',
 							}}
+							fontFamily="Poppins"
 						>
 							Desarrolladores
 						</Button>

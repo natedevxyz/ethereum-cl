@@ -33,6 +33,7 @@ export default function Conocimiento() {
 						fontWeight="bold"
 						color="#4D81F7"
 						mb={5}
+						fontFamily="Poppins"
 					>
 						Conocimiento
 					</Text>
@@ -130,6 +131,7 @@ export default function Conocimiento() {
 											borderRadius="full"
 											color="black"
 											align="center"
+											fontFamily="Poppins"
 										>
 											Descentralización
 										</Text>

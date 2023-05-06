@@ -1,10 +1,11 @@
 import { extendTheme } from '@chakra-ui/react';
 import { theme as chakraTheme } from '@chakra-ui/react';
 import '@fontsource/poppins';
+import '@fontsource/dm-sans';
 
 const fonts = {
 	...chakraTheme.fonts,
-	body: '"Poppins", sans-serif',
+	body: '"DM Sans", sans-serif',
 	heading: '"Poppins", sans-serif',
 };
 

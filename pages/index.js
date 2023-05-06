@@ -59,7 +59,11 @@ export default function Inicio() {
 								"Demasiados inconvenientes para ser considerado seriamente como
 								un medio de comunicación"
 							</Text>
-							<Text fontSize={{ base: 'md', lg: 'xl' }} color="white">
+							<Text
+								fontSize={{ base: 'md', lg: 'xl' }}
+								color="white"
+								fontFamily="Poppins"
+							>
 								Presidente de Western Union refiriéndose al teléfono, 1876
 							</Text>
 						</motion.div>
@@ -72,6 +76,7 @@ export default function Inicio() {
 					>
 						<Image
 							src="/william-orton.jpg"
+							alt="William Orton"
 							fit="contain"
 							maxW={{ base: '10rem', lg: '15rem' }}
 							borderRadius="md"
@@ -126,6 +131,7 @@ export default function Inicio() {
 							fontWeight="bold"
 							color="#4D81F7"
 							mb={{ base: 5, lg: 7 }}
+							fontFamily="Poppins"
 						>
 							Exploremos hoy el internet del mañana
 						</Text>
@@ -157,6 +163,7 @@ export default function Inicio() {
 							}}
 							alignSelf="start"
 							mb={5}
+							fontFamily="Poppins"
 						>
 							Explorar
 						</Button>

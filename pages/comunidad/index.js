@@ -30,6 +30,7 @@ export default function Conocimiento() {
 						fontWeight="bold"
 						color="#4D81F7"
 						mb={5}
+						fontFamily="Poppins"
 					>
 						Comunidad
 					</Text>

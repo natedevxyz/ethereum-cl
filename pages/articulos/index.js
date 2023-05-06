@@ -33,6 +33,7 @@ export default function Articulos() {
 						fontWeight="bold"
 						color="#4D81F7"
 						mb={5}
+						fontFamily="Poppins"
 					>
 						Artículos
 					</Text>
@@ -79,7 +80,11 @@ export default function Articulos() {
 									<Text fontSize={'sm'} mb={2} color="gray.600">
 										Ornella Vallana
 									</Text>
-									<Text fontSize={{ base: 'xl', md: '2xl' }} color="#F8650A">
+									<Text
+										fontSize={{ base: 'xl', md: '2xl' }}
+										color="#F8650A"
+										fontFamily="Poppins"
+									>
 										¿Qué es web3 y por qué está cambiando el mundo?
 									</Text>
 								</Box>

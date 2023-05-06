@@ -11,7 +11,12 @@ export default function Card({ title, text, onClick, children }) {
 				cursor: 'pointer',
 			}}
 		>
-			<Text fontSize={{ base: 'xl', lg: '2xl' }} color="#3C77F8" mb={16}>
+			<Text
+				fontSize={{ base: 'xl', lg: '2xl' }}
+				color="#3C77F8"
+				mb={16}
+				fontFamily="Poppins"
+			>
 				{title}
 			</Text>
 			<motion.div
@@ -31,6 +36,7 @@ export default function Card({ title, text, onClick, children }) {
 				textAlign="justify"
 				fontSize={{ base: 'sm', lg: 'md' }}
 				color="gray.700"
+				fontFamily="Poppins"
 			>
 				{text}
 			</Text>

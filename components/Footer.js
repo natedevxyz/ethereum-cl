@@ -23,9 +23,9 @@ export default function Footer() {
 				<Text mr={1}>Hecho con</Text>
 				<FaHeart color="#EC3238" />
 				<Text mx={1}>por</Text>
-				<Link href="https://twitter.com/Nate_d3v" isExternal>
+				<Link href="https://twitter.com/natedevxyz" isExternal>
 					<Image
-						src="https://github.com/nate-d3v.png"
+						src="https://github.com/natedevxyz.png"
 						borderRadius="full"
 						boxSize={10}
 					/>

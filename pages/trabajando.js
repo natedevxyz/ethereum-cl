@@ -19,7 +19,7 @@ export default function Trabajando() {
 					mx={{ base: 10, lg: 20 }}
 				>
 					<Text
-						fontSize="3xl"
+						fontSize="2xl"
 						alignSelf={{ lg: 'center' }}
 						pr={{ lg: 10 }}
 						color="gray.700"

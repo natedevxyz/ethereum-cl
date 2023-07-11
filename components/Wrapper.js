@@ -1,7 +1,7 @@
 import NextLink from 'next/link';
+import Image from 'next/image';
 import {
 	Flex,
-	Image,
 	Menu,
 	MenuButton,
 	MenuList,
@@ -13,12 +13,17 @@ import {
 	Show,
 	Button,
 	HStack,
+	chakra,
 } from '@chakra-ui/react';
 import '@fontsource/roboto/100.css';
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 import Footer from './Footer';
 
 export default function Wrapper({ children }) {
+	const NextImage = chakra(Image, {
+		shouldForwardProp: prop => ['src', 'alt', 'width', 'height'].includes(prop),
+	});
+
 	return (
 		<Flex minH={'100vh'} flexDirection="column">
 			<Flex
@@ -40,9 +45,11 @@ export default function Wrapper({ children }) {
 					_hover={{ textDecoration: 'none' }}
 				>
 					<Flex alignItems="center">
-						<Image
+						<NextImage
 							src="/logo.png"
 							alt="Ethereum logo"
+							width={32}
+							height={32}
 							boxSize={'2rem'}
 							mr={1}
 						/>

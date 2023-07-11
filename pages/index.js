@@ -3,12 +3,17 @@ import Head from 'next/head';
 import NextLink from 'next/link';
 import Wrapper from '../components/Wrapper';
 import '@fontsource/lora/500.css';
-import { Flex, Image, Text, Box, Button } from '@chakra-ui/react';
+import Image from 'next/image';
+import { Flex, Text, Box, Button, chakra } from '@chakra-ui/react';
 import { motion, useInView } from 'framer-motion';
 
 export default function Inicio() {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
+
+	const NextImage = chakra(Image, {
+		shouldForwardProp: prop => ['src', 'alt', 'width', 'height'].includes(prop),
+	});
 
 	return (
 		<>
@@ -74,11 +79,14 @@ export default function Inicio() {
 						minWidth={{ lg: '40%' }}
 						pb={{ lg: 8 }}
 					>
-						<Image
+						<NextImage
 							src="/william-orton.jpg"
 							alt="William Orton"
+							width={240}
+							height={297}
 							fit="contain"
-							maxW={{ base: '10rem', lg: '15rem' }}
+							maxW={{ base: '160px', lg: '240px' }}
+							maxH={{ base: '198px', lg: '297px' }}
 							borderRadius="md"
 							mb={4}
 							boxShadow="lg"
@@ -118,11 +126,14 @@ export default function Inicio() {
 							duration: 1,
 						}}
 					>
-						<Image
+						<NextImage
 							src="/eth-rainbow.png"
 							alt="Ethereum official logo"
+							width={256}
+							height={467}
 							fit="contain"
-							maxW={{ base: '8rem', lg: '16rem' }}
+							maxW={{ base: '128px', lg: '256px' }}
+							maxH={{ base: '213px', lg: '467px' }}
 							pb={{ base: 0, lg: 10 }}
 						/>
 					</motion.div>

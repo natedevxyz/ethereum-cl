@@ -16,7 +16,7 @@ export default function Footer() {
 				isExternal
 				mb={{ base: 6, lg: 0 }}
 				px={{ base: 0, lg: 12 }}
-				aria-label="Link to our twitter"
+				aria-label="Link to twitter"
 			>
 				<FaTwitter fontSize={48} color="#FB8B80" />
 			</Link>

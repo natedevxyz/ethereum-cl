@@ -1,6 +1,23 @@
-import { Flex, Text, Image, Show, Hide, HStack } from '@chakra-ui/react';
+import Image from 'next/image';
+import { Flex, Text, Show, Hide, HStack, chakra } from '@chakra-ui/react';
 
-export default function FeaturedCard({ title, text, src, alt, children }) {
+export default function FeaturedCard({
+	title,
+	text,
+	src,
+	alt,
+	width,
+	height,
+	wBase,
+	wLarge,
+	hBase,
+	hLarge,
+	children,
+}) {
+	const NextImage = chakra(Image, {
+		shouldForwardProp: prop => ['src', 'alt', 'width', 'height'].includes(prop),
+	});
+
 	return (
 		<Flex
 			borderRadius="2xl"
@@ -15,21 +32,27 @@ export default function FeaturedCard({ title, text, src, alt, children }) {
 			boxShadow="xs"
 		>
 			<Flex flexDirection={{ base: 'row', lg: 'column' }} mr={{ lg: 8 }}>
-				<Image
-					fit="contain"
-					src={src}
-					alt={alt}
-					minW={{ base: '6rem', lg: '8rem' }}
-					maxW={{ base: '6rem', lg: '8rem' }}
-					minH={{ base: '6rem', lg: '10rem' }}
-					maxH={{ base: '6rem', lg: '10rem' }}
+				<Flex
 					border="4px"
 					borderColor="#C0F2F1"
 					borderRadius="xl"
 					p="1rem"
 					mb={3}
 					mr={{ base: 3, lg: 0 }}
-				/>
+					flexGrow={{ base: 0, lg: 1 }}
+					minW={{ base: '35%' }}
+					justify="center"
+					align="center"
+				>
+					<NextImage
+						src={src}
+						alt={alt}
+						width={width}
+						height={height}
+						maxW={{ base: wBase, lg: wLarge }}
+						maxH={{ base: hBase, lg: hLarge }}
+					/>
+				</Flex>
 				<Flex flexDirection="column" align={{ lg: 'center' }}>
 					<Hide above="lg">
 						<Text

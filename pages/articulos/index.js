@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import NextLink from 'next/link';
 import Wrapper from '../../components/Wrapper';
-import { Flex, Text, Box, Card, Image } from '@chakra-ui/react';
+import Image from 'next/image';
+import { Flex, Text, Box, Card, chakra } from '@chakra-ui/react';
 //import ArticleCard from '../../components/ArticleCard';
 //import { useQuery } from 'react-query';
 
@@ -12,6 +13,10 @@ import { Flex, Text, Box, Card, Image } from '@chakra-ui/react';
 
 export default function Articulos() {
 	//const { data, isLoading } = useQuery('blogs', fetchBlogs);
+
+	const NextImage = chakra(Image, {
+		shouldForwardProp: prop => ['src', 'alt', 'width', 'height'].includes(prop),
+	});
 
 	return (
 		<>
@@ -68,13 +73,15 @@ export default function Articulos() {
 								as={NextLink}
 								href="/articulos/que-es-web3"
 							>
-								<Image
-									style={{
-										borderTopLeftRadius: '0.5rem',
-										borderTopRightRadius: '0.5rem',
-									}}
+								<NextImage
+									borderTopLeftRadius={'0.5rem'}
+									borderTopRightRadius={'0.5rem'}
 									src="/web3.jpg"
 									alt="Web3 representation"
+									width={552}
+									height={329}
+									maxW={{ base: '334px', lg: '552px' }}
+									maxH={{ base: '199px', lg: '329px' }}
 								/>
 								<Box p={5}>
 									<Text fontSize={'sm'} mb={2} color="gray.600">

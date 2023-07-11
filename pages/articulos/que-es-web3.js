@@ -1,11 +1,16 @@
 import Head from 'next/head';
 import Wrapper from '../../components/Wrapper';
 import NextLink from 'next/link';
-import { Flex, Text, Link, Box, Image } from '@chakra-ui/react';
+import Image from 'next/image';
+import { Flex, Text, Link, Box, chakra } from '@chakra-ui/react';
 import { SlArrowLeft } from 'react-icons/sl';
 import TopButton from '../../components/TopButton';
 
 export default function QueEsWeb3() {
+	const NextImage = chakra(Image, {
+		shouldForwardProp: prop => ['src', 'alt', 'width', 'height'].includes(prop),
+	});
+
 	return (
 		<>
 			<Head>
@@ -60,10 +65,13 @@ export default function QueEsWeb3() {
 							mb={3}
 						>
 							<Link href="https://twitter.com/OrnellaWeb3">
-								<Image
+								<NextImage
 									borderRadius="full"
 									src="/ornella.jpg"
-									maxH={20}
+									width={80}
+									height={80}
+									maxH="80px"
+									maxW="80px"
 									border="4px"
 									borderColor="#F8650A"
 									alignSelf="start"
@@ -84,12 +92,14 @@ export default function QueEsWeb3() {
 							</Flex>
 						</Flex>
 						<Flex minW={{ base: '100%', lg: '50%' }}>
-							<Image
-								style={{
-									borderRadius: '0.5rem',
-								}}
+							<NextImage
+								borderRadius={'0.5rem'}
 								src="/web3.jpg"
 								alt="Web3 representation"
+								width={553}
+								height={329}
+								maxW={{ base: '334px', lg: '553px' }}
+								maxH={{ base: '199px', lg: '329px' }}
 							/>
 						</Flex>
 						<Box minW={{ base: '100%', lg: '25%' }}></Box>
@@ -150,7 +160,7 @@ export default function QueEsWeb3() {
 						<Text textAlign="justify" mb={5} fontSize={{ lg: 'lg' }}>
 							Viajemos en el tiempo hasta 1989. Este año, el gran{' '}
 							<Link
-								color="blue.500"
+								color="#2B6DF8"
 								href="https://internethalloffame.org/inductees/tim-berners-lee"
 							>
 								<Text fontSize={{ lg: 'lg' }} as="b">
@@ -164,7 +174,7 @@ export default function QueEsWeb3() {
 							¿Te gustaría conocer un fragmento del pasado? Dale un vistazo al
 							primer sitio web de la historia{' '}
 							<Link
-								color="blue.500"
+								color="#2B6DF8"
 								href="http://info.cern.ch/hypertext/WWW/TheProject.html"
 							>
 								aquí
@@ -230,7 +240,7 @@ export default function QueEsWeb3() {
 						<Text textAlign="justify" mb={5} fontSize={{ lg: 'lg' }}>
 							Demos un vistazo a los valores fundamentales de lo que se trata
 							web3, definidos por{' '}
-							<Link color="blue.500" href="http://ethereum.org/">
+							<Link color="#2B6DF8" href="http://ethereum.org/">
 								Ethereum.org
 							</Link>
 						</Text>
@@ -280,23 +290,23 @@ export default function QueEsWeb3() {
 						<Text textAlign="justify" mb={5} fontSize={{ lg: 'lg' }}>
 							Para seguir aprendiendo y leer los próximos artículos de Ornella,
 							conecta con ella a través de{' '}
-							<Link color="blue.500" href="https://twitter.com/OrnellaWeb3">
+							<Link color="#2B6DF8" href="https://twitter.com/OrnellaWeb3">
 								Twitter
 							</Link>{' '}
 							y visita su{' '}
-							<Link color="blue.500" href="https://ornella.substack.com/">
+							<Link color="#2B6DF8" href="https://ornella.substack.com/">
 								Substack
 							</Link>
 							.
 						</Text>
 						<Text textAlign="justify" mb={5} fontSize={{ lg: 'lg' }}>
 							OrnellaWeb3 es actualmente Marketing & Community Lead en{' '}
-							<Link color="blue.500" href="https://app.banklessacademy.com/">
+							<Link color="#2B6DF8" href="https://app.banklessacademy.com/">
 								Bankless Academy
 							</Link>
 							, una plataforma educacional de web3, y la Coordinadora de
 							Marketing de{' '}
-							<Link color="blue.500" href="https://www.bankless.community/">
+							<Link color="#2B6DF8" href="https://www.bankless.community/">
 								Bankless DAO
 							</Link>
 							.

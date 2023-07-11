@@ -1,8 +1,13 @@
 import Head from 'next/head';
 import Wrapper from '../components/Wrapper';
-import { Flex, Image, Text } from '@chakra-ui/react';
+import Image from 'next/image';
+import { Flex, Text, chakra } from '@chakra-ui/react';
 
 export default function Trabajando() {
+	const NextImage = chakra(Image, {
+		shouldForwardProp: prop => ['src', 'alt', 'width', 'height'].includes(prop),
+	});
+
 	return (
 		<>
 			<Head>
@@ -26,12 +31,15 @@ export default function Trabajando() {
 					>
 						Estamos trabajando para entregarte más contenido de calidad
 					</Text>
-					<Image
+					<NextImage
 						src="/eth.png"
 						fit="contain"
-						maxW={{ base: '18rem', lg: '35rem' }}
+						width={560}
+						height={409}
+						maxW={{ base: '288px', lg: '560px' }}
+						maxH={{ base: '210px', lg: '409px' }}
 						alignSelf={{ base: 'center', lg: 'flex-end' }}
-					></Image>
+					/>
 				</Flex>
 			</Wrapper>
 		</>

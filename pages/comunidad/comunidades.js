@@ -2,6 +2,8 @@ import Head from 'next/head';
 import NextLink from 'next/link';
 import Wrapper from '../../components/Wrapper';
 import FeaturedCard from '../../components/FeaturedCard';
+import ethKipu from '../../public/eth-kipu.png';
+import polygonGuild from '../../public/polygon-guild.png';
 import { SlArrowLeft } from 'react-icons/sl';
 import { Flex, Text, Link } from '@chakra-ui/react';
 import {
@@ -51,13 +53,7 @@ export default function Comunidades() {
 					<Flex flexWrap="wrap">
 						<FeaturedCard
 							title="ETH Kipu"
-							src="/eth-kipu.png"
-							width={88}
-							height={120}
-							wLarge={'128px'}
-							hLarge={'160px'}
-							wBase={'41px'}
-							hBase={'56px'}
+							src={ethKipu}
 							alt="ETH Kipu logo"
 							text="Organización sin fines de lucro dedicada a apoyar el ecosistema Ethereum en América Latina. Co-creada por líderes de la comunidad de Latam alineados con los valores de Ethereum."
 						>
@@ -88,13 +84,7 @@ export default function Comunidades() {
 						</FeaturedCard>
 						<FeaturedCard
 							title="Polygon Guild Santiago"
-							src="/polygon-guild.png"
-							width={88}
-							height={88}
-							wLarge={'88px'}
-							hLarge={'88px'}
-							wBase={'56px'}
-							hBase={'56px'}
+							src={polygonGuild}
 							alt="Polygon Guild logo"
 							text="Comunidad de desarrolladores y entusiastas del protocolo Polygon. Es un espacio para conectar, colaborar y aprender en equipo sobre tecnologías web3."
 						>

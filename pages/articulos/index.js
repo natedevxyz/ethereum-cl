@@ -2,6 +2,7 @@ import Head from 'next/head';
 import NextLink from 'next/link';
 import Wrapper from '../../components/Wrapper';
 import Image from 'next/image';
+import web3 from '../../public/web3.jpg';
 import { Flex, Text, Box, Card, chakra } from '@chakra-ui/react';
 //import ArticleCard from '../../components/ArticleCard';
 //import { useQuery } from 'react-query';
@@ -15,7 +16,7 @@ export default function Articulos() {
 	//const { data, isLoading } = useQuery('blogs', fetchBlogs);
 
 	const NextImage = chakra(Image, {
-		shouldForwardProp: prop => ['src', 'alt', 'width', 'height'].includes(prop),
+		shouldForwardProp: prop => ['src', 'alt'].includes(prop),
 	});
 
 	return (
@@ -73,16 +74,14 @@ export default function Articulos() {
 								as={NextLink}
 								href="/articulos/que-es-web3"
 							>
-								<NextImage
-									borderTopLeftRadius={'0.5rem'}
-									borderTopRightRadius={'0.5rem'}
-									src="/web3.jpg"
-									alt="Web3 representation"
-									width={552}
-									height={329}
-									maxW={{ base: '334px', lg: '552px' }}
-									maxH={{ base: '199px', lg: '329px' }}
-								/>
+								<Flex>
+									<NextImage
+										src={web3}
+										alt="Web3 representation"
+										borderTopLeftRadius={'0.5rem'}
+										borderTopRightRadius={'0.5rem'}
+									/>
+								</Flex>
 								<Box p={5}>
 									<Text fontSize={'sm'} mb={2} color="gray.600">
 										Ornella Vallana

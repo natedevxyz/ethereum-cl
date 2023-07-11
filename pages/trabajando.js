@@ -1,13 +1,10 @@
 import Head from 'next/head';
 import Wrapper from '../components/Wrapper';
 import Image from 'next/image';
-import { Flex, Text, chakra } from '@chakra-ui/react';
+import eth from '../public/eth.png';
+import { Flex, Text } from '@chakra-ui/react';
 
 export default function Trabajando() {
-	const NextImage = chakra(Image, {
-		shouldForwardProp: prop => ['src', 'alt', 'width', 'height'].includes(prop),
-	});
-
 	return (
 		<>
 			<Head>
@@ -31,15 +28,12 @@ export default function Trabajando() {
 					>
 						Estamos trabajando para entregarte más contenido de calidad
 					</Text>
-					<NextImage
-						src="/eth.png"
-						fit="contain"
-						width={560}
-						height={409}
-						maxW={{ base: '288px', lg: '560px' }}
-						maxH={{ base: '210px', lg: '409px' }}
+					<Flex
 						alignSelf={{ base: 'center', lg: 'flex-end' }}
-					/>
+						maxW={{ lg: '40%' }}
+					>
+						<Image src={eth} alt="Ethereum illustration" priority={true} />
+					</Flex>
 				</Flex>
 			</Wrapper>
 		</>

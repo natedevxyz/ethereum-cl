@@ -1,5 +1,6 @@
 import NextLink from 'next/link';
 import Image from 'next/image';
+import logo from '../public/logo.png';
 import {
 	Flex,
 	Menu,
@@ -21,7 +22,7 @@ import Footer from './Footer';
 
 export default function Wrapper({ children }) {
 	const NextImage = chakra(Image, {
-		shouldForwardProp: prop => ['src', 'alt', 'width', 'height'].includes(prop),
+		shouldForwardProp: prop => ['src', 'alt'].includes(prop),
 	});
 
 	return (
@@ -45,14 +46,7 @@ export default function Wrapper({ children }) {
 					_hover={{ textDecoration: 'none' }}
 				>
 					<Flex alignItems="center">
-						<NextImage
-							src="/logo.png"
-							alt="Ethereum logo"
-							width={32}
-							height={32}
-							boxSize={'2rem'}
-							mr={1}
-						/>
+						<NextImage src={logo} alt="Ethereum logo" boxSize={'2rem'} mr={1} />
 						<Text fontFamily="Roboto" fontSize="4xl" fontWeight="100">
 							Ξthereum.cl
 						</Text>

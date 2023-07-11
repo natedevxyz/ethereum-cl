@@ -2,13 +2,15 @@ import Head from 'next/head';
 import Wrapper from '../../components/Wrapper';
 import NextLink from 'next/link';
 import Image from 'next/image';
+import web3 from '../../public/web3.jpg';
+import ornella from '../../public/ornella.jpg';
 import { Flex, Text, Link, Box, chakra } from '@chakra-ui/react';
 import { SlArrowLeft } from 'react-icons/sl';
 import TopButton from '../../components/TopButton';
 
 export default function QueEsWeb3() {
 	const NextImage = chakra(Image, {
-		shouldForwardProp: prop => ['src', 'alt', 'width', 'height'].includes(prop),
+		shouldForwardProp: prop => ['src', 'alt'].includes(prop),
 	});
 
 	return (
@@ -67,9 +69,8 @@ export default function QueEsWeb3() {
 							<Link href="https://twitter.com/OrnellaWeb3">
 								<NextImage
 									borderRadius="full"
-									src="/ornella.jpg"
-									width={80}
-									height={80}
+									src={ornella}
+									alt="Ornella's profile picture"
 									maxH="80px"
 									maxW="80px"
 									border="4px"
@@ -94,12 +95,8 @@ export default function QueEsWeb3() {
 						<Flex minW={{ base: '100%', lg: '50%' }}>
 							<NextImage
 								borderRadius={'0.5rem'}
-								src="/web3.jpg"
+								src={web3}
 								alt="Web3 representation"
-								width={553}
-								height={329}
-								maxW={{ base: '334px', lg: '553px' }}
-								maxH={{ base: '199px', lg: '329px' }}
 							/>
 						</Flex>
 						<Box minW={{ base: '100%', lg: '25%' }}></Box>
